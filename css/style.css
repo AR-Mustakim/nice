@@ -7,8 +7,6 @@
 
 .navbar-light {
     background-color: #538C11;
-    /* background-color: #67c700; */
-    /* text-color: azure; */
 }
 
 .navbar .navbar-brand img{
@@ -28,15 +26,21 @@
     text-decoration: none;
 }
 
-.row{
-    /* background-image: url("image/bg-logo.jpg"); */
-    background-color: transparent;
+.row{background-color: transparent;}
+
+.content{
+    padding-top: 3em;
+     padding-bottom: 3em;
 }
 
-.welcome-text{
-    padding-top: 3em;
-    padding-bottom: 2em;
+.hr-line{
+    visibility: hidden;
 }
+
+/* .welcome-text{
+    padding-top: 3em;
+    padding-bottom: 3em;
+} */
 .welcome-text h1{
     font-size: 54;
     font-family: Roboto;
@@ -45,9 +49,8 @@
 
 .content .img-right img{    
     width: 100%;
-    height: auto;
-    padding-top: 3em;    
-    padding-bottom: 2em;
+    height: auto;  
+    
 }
 
 .researchFoci-title h1{        
@@ -56,7 +59,6 @@
     color: #538C11;
 
 }
-
 
 
 /* Navbar option dropdown */
@@ -93,14 +95,14 @@
   display: block;
 }
   
-  /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {background-color: #c2c2c2; }
-  
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {display: block;}
-  
-  /* Change the background color of the dropdown button when the dropdown content is shown */
-  .dropdown:hover .dropbtn {background-color: #538C11;}
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #c2c2c2; }
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #538C11;}
 
 
  
@@ -121,6 +123,12 @@ footer {
   padding: 15px;
 }
 
+footer a{
+    text-decoration: none ;
+    color: white;
+}
+
+/* ------------------------------------------------------------------------------------------------------ */
 /* On small screens, set height to 'auto' for sidenav and grid */
 @media screen and (max-width: 767px) {
 
@@ -142,6 +150,6 @@ footer {
 
     .row.content {height:auto;} 
     .row.content h1{text-align: center;} 
-    .researchFoci h5{text-align: center;
-    }
+    .researchFoci h5{text-align: center;}
+    .hr-line{visibility: visible;}
 }
