@@ -1,0 +1,147 @@
+/* Remove the navbar's default margin-bottom and rounded borders */ 
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+    height: 120px;
+}
+
+.navbar-light {
+    background-color: #538C11;
+    /* background-color: #67c700; */
+    /* text-color: azure; */
+}
+
+.navbar .navbar-brand img{
+    max-height: 90px;
+    padding-left: 50% ;
+}
+
+.navbar .navbar-nav{
+    font-size: large;
+    padding-right: 10%;
+    
+}
+
+.navbar .navbar-nav .nav-item  a{
+    color: rgb(255, 255, 255);
+    padding-right: 1.5em;
+    text-decoration: none;
+}
+
+.row{
+    /* background-image: url("image/bg-logo.jpg"); */
+    background-color: transparent;
+}
+
+.welcome-text{
+    padding-top: 3em;
+    padding-bottom: 2em;
+}
+.welcome-text h1{
+    font-size: 54;
+    font-family: Roboto;
+    color: #538C11;
+}
+
+.content .img-right img{    
+    width: 100%;
+    height: auto;
+    padding-top: 3em;    
+    padding-bottom: 2em;
+}
+
+.researchFoci-title h1{        
+    font-size: 54;
+    font-family: Roboto;
+    color: #538C11;
+
+}
+
+
+
+/* Navbar option dropdown */
+/* Dropdown Button */
+.dropbtn {
+    /* background-color: #04AA6D; */
+    color: rgb(0, 0, 0);
+    /* padding: 16px;
+    font-size: 16px; */
+    /* border: none; */
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.navbar .navbar-nav .nav-item .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #c2c2c2; }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: #538C11;}
+
+
+ 
+/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+.row.content {
+    height: auto;
+    background-image: url("../image/bg3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+/* Set gray background color and 100% height */
+/* Set black background color, white text and some padding */
+footer {
+  background-color: #518D12;
+  color: white;
+  padding: 15px;
+}
+
+/* On small screens, set height to 'auto' for sidenav and grid */
+@media screen and (max-width: 767px) {
+
+    .navbar {
+        margin-bottom: 0;
+        border-radius: 0;
+        height: 80px;
+    }
+    
+    .sidenav {
+        height: 0;
+        padding: 0px;
+    }
+
+    .navbar .navbar-brand img{
+        max-height: 60px;
+        padding: 0;
+    }
+
+    .row.content {height:auto;} 
+    .row.content h1{text-align: center;} 
+    .researchFoci h5{text-align: center;
+    }
+}
