@@ -17,7 +17,6 @@
 .navbar .navbar-nav{
     font-size: large;
     padding-right: 10%;
-    
 }
 
 .navbar .navbar-nav .nav-item  a{
@@ -26,19 +25,12 @@
     text-decoration: none;
 }
 
-.row{background-color: transparent;}
-
 .content{
     padding-top: 3em;
-     padding-bottom: 3em;
+    padding-bottom: 3em;
 }
 
-.hr-line{
-    visibility: hidden;
-}
-
-
-.welcome-text h1{
+.content h1{
     font-size: 54;
     font-family: Roboto;
     color: #538C11;
@@ -46,31 +38,24 @@
 
 .content .img-right img{    
     width: 100%;
-    height: auto;  
-    
+    height: auto;      
 }
 
-.researchFoci-title h1{        
-    font-size: 54;
-    font-family: Roboto;
-    color: #538C11;
-
+.content .quote{
+    font-family: 'Anonymous Pro', monospace;
+    font-size: x-large;
 }
 
+.hr-line{visibility: hidden;}
 
-/* Navbar option dropdown */
-/* Dropdown Button */
-.dropbtn {
-    color: rgb(0, 0, 0);
-}
-
+/* Navbar option Hover dropdown */
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
-  position: relative;
-  display: inline-block;
+    position: relative;
+    display: inline-block;
 }
 
-/* Dropdown Content (Hidden by Default) */
+/* Hover Dropdown Content (Hidden by Default) */
 .dropdown-content {
   display: none;
   position: absolute;
@@ -87,17 +72,14 @@
   text-decoration: none;
   display: block;
 }
-  
+
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #c2c2c2; }
+.dropdown-content a:hover {background-color: #d3d3d3; font-size: 101%;}
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {display: block;}
 
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {background-color: #538C11;}
-
-
+.row{background-color: transparent;}
  
 /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
 .row.content {
@@ -105,15 +87,28 @@
     background-image: url("../image/bg3.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-
+    
 }
+.row.content h1{text-shadow: 2px 2px 4PX rgba(82, 141, 18, 0.358);} 
+
+.content .help-img{
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 100%;
+}
+
+
+
+
+
+
 
 /* Set gray background color and 100% height */
 /* Set black background color, white text and some padding */
 footer {
-  background-color: #518D12;
-  color: white;
-  padding: 15px;
+    background-color: #518D12;
+    color: white;
+    padding: 15px;
 }
 
 footer a{
@@ -121,28 +116,23 @@ footer a{
     color: white;
 }
 
+footer a:hover{color: rgb(19, 34, 19); font-size: 100.5%;}
+
 /* ------------------------------------------------------------------------------------------------------ */
 /* On small screens, set height to 'auto' for sidenav and grid */
 @media screen and (max-width: 767px) {
-
     .navbar {
         margin-bottom: 0;
         border-radius: 0;
         height: 80px;
     }
     
-    .sidenav {
-        height: 0;
-        padding: 0px;
-    }
+    .sidenav {height: 0; padding: 0px;}
 
-    .navbar .navbar-brand img{
-        max-height: 60px;
-        padding: 0;
-    }
+    .navbar .navbar-brand img{max-height: 60px; padding: 0; }
 
     .row.content {height:auto;} 
-    .row.content h1{text-align: center;} 
-    .researchFoci h5{text-align: center;}
+    .row.content h1, h2, h3, h4, h5{text-align: center;} 
+    .row.content p{text-align: center;} 
     .hr-line{visibility: visible;}
 }
