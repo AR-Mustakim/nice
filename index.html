@@ -1,136 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>Home</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
- </head>
-<body>
+  <head>
+    <title>Home</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="nise-navbar">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">
+          <img src="image/logo.jpg" width="auto" height="90" alt="NiSE logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="true"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link">People</a>
+              <div class="dropdown-content">
+                <a href="members.html">Members</a>
+                <a href="alumni.html">Alumni</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#">Research</a>
+              <div class="dropdown-content">
+                <a href="publication.html">Publications</a>
+                <a href="project.html">Project</a>
+                <a href="resources.html">Resources</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#">Activity</a>
+              <div class="dropdown-content">
+                <a href="activity.html">Lab Activities</a>
+                <a href="reading.html">Reading Group</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="news.html">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
 
-<div class="nise-navbar">
-  <nav class="navbar navbar-expand-lg navbar-light ">
-    <a class="navbar-brand" href="#">
-      <img src="image/logo.jpg" width="auto" height="90" alt="NiSE logo">
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" 
-    data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" 
-    aria-expanded="true" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item dropdown">         
-          <a class="nav-link" href="#">People</a>
-            <div class="dropdown-content">
-              <a href="#">Members</a>
-              <a href="#">Alumni</a>
-            </div>          
-        </li>
-        <li class="nav-item dropdown">         
-          <a class="nav-link" href="#">Research</a>
-            <div class="dropdown-content">
-              <a href="#">Publications</a>
-              <a href="#">Project</a>
-              <a href="#">Resources</a>
-            </div>          
-        </li>
-        <li class="nav-item dropdown">         
-          <a class="nav-link" href="#">Activity</a>
-            <div class="dropdown-content">
-              <a href="#">Lab Activities</a>
-              <a href="#">Reading Group</a>
-            </div>          
+    <div class="nise-content">
+      <div class="container-fluid text-center">
+        <div class="row content">
+          <div class="col-sm-2 sidenav"></div>
+          <div class="col-sm-4 text-left">
+            <div class="welcome-text">
+              <h1>Welcome</h1>
+              <p>
+                The Knowledge-intensive Software Engineering (NiSE) Research
+                Group performs various researches to improve understanding,
+                representing, and modeling of the complex problem domain from
+                the universe of discourse (UoD), for the design, development and
+                analysis of the software-intensive systems within
+                socio-technical environments, with an emphasis on delivering
+                state-of-the-art research and transferring innovative ideas into
+                practice, by supporting all aspects of requirements engineering
+                in knowledge-intensive software engineering process, for
+                designing and building the next generation software systems
+              </p>
+            </div>
+          </div>
+          <div class="col-sm-4 img-right">
+            <img src="image/horse.jpg" />
+          </div>
+          <div class="col-sm-2 sidenav"></div>
+
+          <div class="col-sm-2 sidenav"></div>
+          <div class="col-sm-3 text-left">
+            <hr class="hr-line rounded" />
+            <div class="researchFoci-title">
+              <h1>Current Research Foci</h1>
+            </div>
+          </div>
+          <div class="col-sm-5 text-left researchFoci">
+            <hr class="hr-line" />
+            <h5>Ontology-based Requirements Engineering</h5>
+            <h5>
+              Critical Infrastructure Protection Domain Modeling & Simulation
+            </h5>
+            <h5>Software Verification and Validation</h5>
+            <h5>Software-intensive Systems</h5>
+            <h5>Knowledge Engineering</h5>
+            <h5>Secure Software Assurance</h5>
+            <h5>Information Security & Assurance</h5>
+            <h5>Human Computer Interaction</h5>
+          </div>
+          <div class="col-sm-2 sidenav"></div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="container-fluid text-center">
+      <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">News</a>
+          <a class="nav-link" href="members.html">People</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Research</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="activity.html">Activity</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="news.html">News</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="help.html">Help</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="contact.html">Contact</a>
-        </li>        
+        </li>
       </ul>
-    </div>
-    
-  </nav>
-</div>
 
-<div class="nise-content">
-  <div class="container-fluid text-center">    
-    <div class="row content">
-      <div class="col-sm-2 sidenav"></div>    
-        <div class="col-sm-4 text-left">
-          <div class="welcome-text">
-            <h1>Welcome</h1>
-            <p>The Knowledge-intensive Software Engineering (NiSE) Research Group performs various researches to improve understanding, representing, and modeling of the complex problem domain from the universe of discourse (UoD), for the design, development and analysis of the software-intensive systems within socio-technical environments, with an emphasis on delivering state-of-the-art research and transferring innovative ideas into practice, by supporting all aspects of requirements engineering in knowledge-intensive software engineering process, for designing and building the next generation software systems</p>
-          </div>
-        </div>
-        <div class="col-sm-4 img-right">
-          <img src="image/horse.jpg">
-        </div> 
-      <div class="col-sm-2 sidenav"></div>
-
-      <div class="col-sm-2 sidenav"></div>    
-        <div class="col-sm-3 text-left">
-          <hr class="hr-line rounded">
-          <div class="researchFoci-title">
-            <h1>Current Research Foci</h1>
-          </div>
-        </div>
-        <div class="col-sm-5 text-left researchFoci">
-          <hr class="hr-line">
-          <h5>Ontology-based Requirements Engineering</h5>
-          <h5>Critical Infrastructure Protection Domain Modeling & Simulation</h5>
-          <h5>Software Verification and Validation</h5>
-          <h5>Software-intensive Systems</h5>
-          <h5>Knowledge Engineering</h5>
-          <h5>Secure Software Assurance</h5>
-          <h5>Information Security & Assurance</h5>
-          <h5>Human Computer Interaction</h5>          
-        </div> 
-      <div class="col-sm-2 sidenav"></div>
-    </div>
-  </div>
-</div>
-
-<footer class="container-fluid text-center">
-
-  <ul class="nav justify-content-center">
-    <li class="nav-item">
-      <a class="nav-link active" href="#">Home</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">People</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Research</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Activity</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">News</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="help.html">Help</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="contact.html">Contact</a>
-    </li>
-  </ul>
-
-  <p>NiSE Research Group<br>
-    Department of Software Convergence Technology<br>
-    College of Information and Computer Engineering<br>
-    <a href="https://www.ajou.ac.kr/iadmissions/index.do">Ajou University</a></p>
-
-</footer>
-
-</body>
+      <p>
+        NiSE Research Group<br />
+        Department of Software Convergence Technology<br />
+        College of Information and Computer Engineering<br />
+        <a href="https://www.ajou.ac.kr/iadmissions/index.do"
+          >Ajou University</a
+        >
+      </p>
+    </footer>
+  </body>
 </html>
