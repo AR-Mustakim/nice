@@ -1,6 +1,6 @@
-html{
-    scroll-behavior: smooth;
-    animation-timing-function: linear;
+html {
+  scroll-behavior: smooth;
+  animation-timing-function: linear;
 }
 /* Remove the navbar's default margin-bottom and rounded borders */
 .navbar {
@@ -58,12 +58,22 @@ html{
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {
   background-color: #d3d3d3;
-  font-size: 101%;
 }
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+#niseNavbarToggler {
+  display: block;
+  height: 400px;
+  width: 150px;
+  background-color: aqua;
+  position: fixed;
+  top: 80px;
+  right: 0px;
+  z-index: 99;
 }
 
 /* End of navbar-------------------------------------------------------------------------------------------------- */
@@ -79,16 +89,15 @@ html{
 }
 
 .nise-content a {
-    color: #3d7600;
-    font-size: 102%;
-  }
-  
-  .nise-content a:hover {
-    color: #538c11;
-    text-decoration: none;
-    text-shadow: 1px 1px 3px rgb(19, 34, 19, 0.25);
-  }
-  
+  color: #3d7600;
+  font-size: 102%;
+}
+
+.nise-content a:hover {
+  color: #538c11;
+  text-decoration: none;
+  text-shadow: 1px 1px 3px rgb(90, 90, 90, 0.3);
+}
 
 .content {
   padding-top: 3em;
@@ -131,7 +140,9 @@ html{
   margin-left: -3px;
 }
 
-.container .img-col {padding: 1%;}
+.container .img-col {
+  padding: 1%;
+}
 
 .activity-img1 {
   float: left;
@@ -145,11 +156,104 @@ html{
   width: 100%;
   height: 270px;
 }
+
 .activity-img3 {
-  object-fit: cover;  
-  padding-right: 0; padding-left: 0;
+  object-fit: cover;
+  padding-right: 0;
+  padding-left: 0;
   width: 100%;
   height: 200px;
+}
+
+.news-img {
+  width: 100%;
+  height: 250px;
+  padding: 1%;
+}
+
+.project-container {
+  display: block;
+  background-color: #ffffff;
+  padding: 3%;
+  margin-bottom: 3%;
+  box-shadow: 5px 10px 12px rgba(90, 90, 90, 0.15);
+  border-radius: 0.5%;
+}
+
+.learn-more-btn {
+  position: center;
+  background-color: #ffffff;
+  width: 120px;
+  height: 35px;
+  border: 2px solid #4dbd33;
+  border-radius: 5%;
+  margin-bottom: 5px;
+}
+
+.project-img {
+  object-fit: contain;
+  padding: 0.5% 1%;
+  width: 100%;
+  height: auto;
+}
+
+.project-img-caption {
+  position: absolute;
+  opacity: 0;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  font-size: xx-large;
+  transform: translate(-50%, -50%);
+  /* background-color: chocolate; */
+}
+.project-img:hover + .project-img-caption {
+  opacity: 0.65;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 50; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: none; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black with opacity*/
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto; /* 15% from the top and centered */
+  padding: 5px 10px;
+  border: 1px solid #888;
+  border-radius: 1%;
+  width: 70%; /* Could be more or less, depending on screen size */
+  height: auto;
+}
+
+.modal-content img {
+  max-height: 75vh;
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  /* float: right; */
+  top: 5px;
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 /* Set gray background color and 100% height */
@@ -171,32 +275,32 @@ footer a:hover {
   font-size: 100.5%;
 }
 
-
 #topBtn {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 30px;
-    z-index: 99;
-    border: none;
-    outline: none;
-    background-color: rgb(248, 252, 239);
-    cursor: pointer;
-    padding: 1.5px;
-    border-radius: 50px;
-  }
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 10;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 1.5px;
+  border-radius: 50px;
+  opacity: 0.5;
+}
 
-  #topBtn img{
-      width: 45px;
-      height: 45px;
-  }
-  
-  #topBtn:hover {
-    background-color: rgb(130, 130, 130);}
+#topBtn img {
+  width: 45px;
+  height: 45px;
+}
+
+#topBtn:hover {
+  opacity: 1;
+}
 
 /* ======================================================================================================= */
 /* On small screens, set height to 'auto' for sidenav and grid */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 780px) {
   .navbar {
     margin-bottom: 0;
     border-radius: 0;
@@ -216,7 +320,7 @@ footer a:hover {
   .row.content {
     height: auto;
   }
-  
+
   .row.content h1,
   h2,
   h3,
@@ -226,6 +330,10 @@ footer a:hover {
   }
   .row.content p {
     text-align: justify;
+  }
+
+  .nise-content .contact-text p {
+    text-align: center;
   }
   .hr-line {
     visibility: visible;
@@ -239,10 +347,35 @@ footer a:hover {
     visibility: hidden;
   }
 
-  .activity-img1, .activity-img2, .activity-img3 {
+  .activity-img1,
+  .activity-img2,
+  .activity-img3 {
     object-fit: fit;
     padding: 1%;
     width: 100%;
     height: 250px;
+  }
+
+  #topBtn {
+    display: none;
+    position: fixed;
+    bottom: 15px;
+    right: 20px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: rgb(248, 252, 239);
+    cursor: pointer;
+    padding: 1.5px;
+    border-radius: 50px;
+  }
+
+  #topBtn img {
+    width: 35px;
+    height: 35px;
+  }
+
+  .project-img-caption {
+    display: none;
   }
 }

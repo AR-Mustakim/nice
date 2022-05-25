@@ -1,0 +1,19 @@
+Project pages:
+
+nise-content , container-fluid
+	| row ,content
+		| col-2 , sidenav
+		| col-8:
+			| col-12 , page-title
+				<h1></h1>
+			| container , project-container
+				| row , project-title
+					| col-12 
+						<h4><a href="to each project"></a></h4>
+					| row , project-image-and-description
+						| col-6
+							<div></div>
+								<img, project-img></img, project-img>
+								<div, project-img-caption></div, project-img-caption>
+						| col-6
+		| col-2 , sidenav
