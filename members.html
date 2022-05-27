@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Contact</title>
+    <title>People</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
@@ -12,12 +12,22 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="nise-navbar">
       <nav id="navbar" class="navbar fixed-top navbar-expand-lg navbar-light">
         <a class="navbar-brand" href="#">
-          <img id="navbar-nise-logo" src="image/logo.jpg" width="auto" height="90" alt="NiSE logo" />
+          <img
+            id="navbar-nise-logo"
+            src="image/logo.jpg"
+            width="auto"
+            height="90"
+            alt="NiSE logo"
+          />
         </a>
         <button
           class="navbar-toggler"
@@ -68,49 +78,74 @@
       </nav>
     </div>
 
-    <div class="nise-content">
-      <div class="container-fluid text-left">
-        <div class="row content">
-          <div class="col-sm-2 sidenav"></div>
-          <div class="col-sm-8 contact-text">
-            <h1>Contact us</h1>
-            <hr />
-            <h4>Seok-Won Lee, Ph.D.</h4>
-            <p>
-              Professor of Software Engineering/Artificial Intelligence <br />
-              College of Information and Computer Engineering<br />
-              Ajou University<br />
-              Pal-Dal Hall # 603 <br />
-              San 5, Woncheon-dong, Yeongtong-gu, Suwon, Republic of Korea
-              443-749
-            </p>
-
-            <br />
-            <p>
-              Office Phone: +82-31-219-3548<br />
-              Fax: +82-31-219-1621<br />
-              Email: leesw @ ajou. ac. kr<br />
-              <a href="http://www.machinediscovery.com"
-                >http://www.machinediscovery.com</a
-              >
-            </p>
-
-            <br />
-            <h5>
-              Knowledge-intensive Software Engineering (NiSE) Research Group
-            </h5>
-            <p>
-              Pal-Dal Hall # 913-1<br />
-              Office Phone: +82-31-219-2442
-            </p>
+    <div class="nise-content container-fluid">
+      <div class="row content">
+        <div class="col-sm-2 sidenav"></div>
+        <div class="col-sm-8 text-left">
+          <div class="col-sm-12 page-title">
+            <h1>People  </h1>
+            <hr style="border: 1px solid #538c11" />
           </div>
-          <div class="col-sm-2 sidenav"></div>
+
+          <div class="container people-container p13">
+            <div class="row project-title">
+              <div class="col-sm-12 text-left">
+                <h4>Professor</h4>
+                <div class="row">
+                  <div class="col-sm-3 people-photo"><img src="image/people/profSWL.jpg" alt=""></div>
+                  <div class="col-sm-5 people-description">
+                    <p >
+                      <span class="people-name">Seok-Won Lee, Ph.D.</span><br>
+                      Full Professor <br>
+                      Director/NiSE Research Lab<br>
+                      Co-Director/Artificial Intellignece Lab</p>
+                  </div>
+                  <div class="col-sm-2 void-space"></div>
+                  <div class="col-sm-2 void-space"></div>
+                </div>
+                <hr>
+                <h4>Phd Members</h4>
+                <div class="row">
+                  <div class="col-sm-3 people-photo"><img src="image/people/Hyo-Cheol Lee.jpg" alt=""></div>
+                  <div class="col-sm-3 people-description">
+                    <p >
+                      <span class="people-name">Hyo-Cheol Lee </span><br>
+                      Self-Adaptive System, Trust, Provenance, Requirements</p>
+                  </div>
+                  <div class="col-sm-3 people-photo"><img src="image/people/Sangeeta Dey.jpg" alt=""></div>
+                  <div class="col-sm-3 people-description">
+                    <p >
+                      <span class="people-name">Sangeeta Dey </span><br>
+                      Requirements Elicitation, Machine Learning and Self-Adaptive</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-3 people-photo"><img src="image/people/Shin-Hye Park.jpg" alt=""></div>
+                  <div class="col-sm-3 people-description">
+                    <p >
+                      <span class="people-name">Shin-Hye Park </span><br>
+                      Attack Modeling, Information Security, and Software Engineering</p>
+                  </div>
+                  <div class="col-sm-3 people-photo"><img src="image/people/Woo-Gon Shim.jpg" alt=""></div>
+                  <div class="col-sm-3 people-description">
+                    <p >
+                      <span class="people-name">Woo-Gon Shim</span><br>
+                      Requirements Elicitation, Machine Learning and Self-Adaptive</p>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
         </div>
+        <div class="col-sm-2 sidenav"></div>
       </div>
     </div>
 
-    <button onclick="backToTopFunction()" id="topBtn" title="Back to top"><img src="image/top_icon.png" alt=""></button>
-    <footer class="container-fluid text-center">
+    <button onclick="backToTopFunction()" id="topBtn" title="Back to top">
+      <img src="image/top_icon.png" alt="" />
+    </button>
+    <footer class="container-fluid text-center footer-style">
       <ul class="nav justify-content-center">
         <li class="nav-item">
           <a class="nav-link active" href="#">Home</a>

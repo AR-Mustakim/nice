@@ -1,13 +1,14 @@
 html {
   scroll-behavior: smooth;
-  animation-timing-function: ease-in-out;
+  animation-timing-function: ease;
 }
 
 #navbar {
   margin-bottom: 0;
   border-radius: 0;
   height: 120px;
-  
+  opacity: 1;
+  transition: all 300ms ease; 
 }
 
 .navbar-light {
@@ -19,6 +20,7 @@ html {
 .navbar .navbar-brand img {
   max-height: 90px;
   padding-left: 100%;
+  transition: all 300ms ease;
 }
 
 .navbar .navbar-nav {
@@ -31,7 +33,6 @@ html {
   padding-right: 1.5em;
   text-decoration: none;
 }
-
 
 /* Navbar option Hover dropdown */
 /* The container <div> - needed to position the dropdown content */
@@ -89,7 +90,7 @@ html {
   background-image: url("../image/bg3.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 120px;
+  padding-top: 100px;
 }
 
 .nise-content a {
@@ -100,7 +101,7 @@ html {
 .nise-content a:hover {
   color: #538c11;
   text-decoration: none;
-  text-shadow: 1px 1px 3px rgb(90, 90, 90, 0.3);
+  text-shadow: 1px 1px 3px rgb(90, 90, 90, 0.15);
 }
 
 .content {
@@ -109,11 +110,47 @@ html {
 }
 
 .content h1 {
-  font-size: 54;
+  font-size: 52;
   font-family: Roboto;
   color: #538c11;
-  text-shadow: 2px 2px 4px rgba(90, 90, 90, 0.15);
+  text-shadow: 2px 2px 4px rgba(90, 90, 90, 0.1);
 }
+
+.content h2 {
+  font-size: 45;
+  font-family: Roboto;
+  color: #538c11;
+  text-shadow: 2px 2px 4px rgba(90, 90, 90, 0.1);
+}
+
+.people-photo{
+  padding: 0;
+  right: 0;
+  top: 0;
+}
+
+.people-photo img{
+  border-radius: 10%;
+  width: 100%;
+  height: auto;
+  padding: 5% 10%;
+}
+
+.people-name{
+  font-size: large;
+  font-weight: 600;
+}
+
+.people-description{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding: 5% 0% 0% 0%;
+}
+
+
+
+
 
 .content .img-right img {
   width: 100%;
@@ -129,9 +166,9 @@ html {
   visibility: hidden;
 }
 
-.content .help-img {
-  padding-left: 5%;
-  padding-right: 5%;
+.wide-img {
+  /* padding-left: 5%;
+  padding-right: 5%; */
   width: 100%;
   height: auto;
 }
@@ -185,13 +222,19 @@ html {
 }
 
 .learn-more-btn {
-  position: center;
-  background-color: #ffffff;
+  text-align: center;
+  display: block;
   width: 120px;
   height: 35px;
+  background-color: #ffffff;
   border: 2px solid #4dbd33;
-  border-radius: 5%;
+  border-radius: 5px;
+  padding: 2.5px 2px;
   margin-bottom: 5px;
+}
+
+.learn-more-btn:hover{
+  background-color: #f3fff0;
 }
 
 .project-img {
@@ -211,6 +254,7 @@ html {
   transform: translate(-50%, -50%);
   /* background-color: chocolate; */
 }
+
 .project-img:hover + .project-img-caption {
   opacity: 0.65;
 }
@@ -219,7 +263,7 @@ html {
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
-  z-index: 50; /* Sit on top */
+  z-index: 1500; /* Sit on top */
   left: 0;
   top: 0;
   width: 100%; /* Full width */
@@ -238,6 +282,7 @@ html {
   border-radius: 1%;
   width: 70%; /* Could be more or less, depending on screen size */
   height: auto;
+  transition: all 300ms ease;
 }
 
 .modal-content img {
@@ -251,6 +296,7 @@ html {
   top: 5px;
   font-size: 45px;
   font-weight: bold;
+  
 }
 
 .close:hover,
@@ -260,13 +306,32 @@ html {
   cursor: pointer;
 }
 
+.sponsors-logo{
+  padding: 1% 5%;
+}
+.sponsors-logo img{
+  width: 100%;
+  justify-self: center;
+  max-height: 150px;
+}
+
+.publication-container{
+  display: block;
+  background-color: #ffffff;
+  padding: 3%;
+  margin-bottom: 3%;
+}
+
+
+
+
 /* Set gray background color and 100% height */
 /* Set black background color, white text and some padding */
 footer {
   background-color: #518d12;
   box-shadow: 0px -2px 7px rgba(90, 90, 90, 0.35);
   color: white;
-  padding-bottom: 1%;
+  padding: 1%;
 }
 
 footer a {
@@ -339,6 +404,29 @@ footer a:hover {
   .nise-content .contact-text p {
     text-align: center;
   }
+
+  .nise-content .people-description{
+    justify-content: center;
+  }
+  .nise-content .people-description p{
+    text-align: center;
+  }
+
+  .people-photo{
+    justify-content: center;
+  }
+
+
+  .people-description{
+    padding: 1% 1%;
+  }
+
+  .nise-content .void-space{
+    width: 0;
+    padding: 0px;
+    margin: 0;    
+  }
+
   .hr-line {
     visibility: visible;
   }
