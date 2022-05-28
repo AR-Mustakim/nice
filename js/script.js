@@ -26,18 +26,13 @@ function scrollFunction() {
       stickyNavbar.style.height = "55px";
       niseLogo.style.height = "50px";
       niseLogo.style.paddingLeft = "150%";
-      stickyNavbar.style.opacity = "1";
+      
     } 
     else if (wWidth < 781 && document.body.scrollTop < 1000) {
       stickyNavbar.style.height = "80px";
       niseLogo.style.height = "60px";
       niseLogo.style.padding = "5%";
-      stickyNavbar.style.opacity = "1";
-    }
-    else{
-      stickyNavbar.style.height = "0px";
-      stickyNavbar.style.opacity = "0";
-      niseLogo.style.height = "0px";    
+      
     }
   }
   else {
@@ -45,12 +40,12 @@ function scrollFunction() {
       stickyNavbar.style.height = "120px";
       niseLogo.style.height = "90px";
       niseLogo.style.paddingLeft = "100%";
-      stickyNavbar.style.opacity = "1";
+      
     } else {
       stickyNavbar.style.height = "80px";
       niseLogo.style.height = "60px";
       niseLogo.style.padding = "5%";
-      stickyNavbar.style.opacity = "1";
+      
     }
     topButton.style.display = "none";
   }
