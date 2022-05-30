@@ -1,53 +1,55 @@
 //Get the button
-var topButton = document.getElementById("topBtn");
+var toTopBtn = document.getElementById("topBtn");
 var toggleBtn = document.getElementById("navbarBtn")
 var toggleContainer = document.getElementById("niseNavbarToggler")
 var stickyNavbar = document.getElementById("navbar")
-var niseLogo = document.getElementById("navbar-nise-logo")
+var nise_Logo = document.getElementById("niseLogo")
 var limit = Math.max(document.body.scrollHeight, document.body.offsetHeight,
   document.documentElement.clientHeight, document.documentElement.scrollHeight,
   document.documentElement.offsetHeight);
 var scrheight = screen.height;
-var wWidth = window.innerWidth;
+var scrinWidth = window.innerWidth;
 var triggerPoint = limit-scrheight*1.2;
 
-console.log(" the  limit is ====:"+ limit);
-console.log(" the  triggerpoint  is ====:"+ triggerPoint);
-console.log(" the  document.body.scrollTop  is ====:"+ document.documentElement.scrollTop);
+console.log(" the  screen inner width is ====:"+ (scrinWidth/10)+"%");
+// console.log(" the  screen width is ====:"+ scrWidth);
+// console.log(" the  triggerpoint  is ====:"+ triggerPoint);
+// console.log(" the  document.body.scrollTop  is ====:"+ document.documentElement.scrollTop);
+
 
 // When the user scrolls down 300px from the top of the document,the button appear
 window.onscroll = function () { scrollFunction() };
 
+
 function scrollFunction() {
   
-  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200 ) {
-    topButton.style.display = "block";
-    if (wWidth > 780 &&  document.body.scrollTop < triggerPoint  &&  document.documentElement.scrollTop < triggerPoint ) {
+  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200 ) {    
+    toTopBtn.style.display = "block";
+    if (scrinWidth > 780 &&  document.body.scrollTop < triggerPoint  ||  document.documentElement.scrollTop < triggerPoint ) {
       stickyNavbar.style.height = "55px";
-      niseLogo.style.height = "50px";
-      niseLogo.style.paddingLeft = "150%";
-      
+      nise_Logo.style.height = "50px";
+      nise_Logo.style.paddingLeft = "95%";      
     } 
-    else if (wWidth < 781 && document.body.scrollTop < 1000) {
+    else if (document.body.scrollTop < triggerPoint  ||  document.documentElement.scrollTop < triggerPoint) {
       stickyNavbar.style.height = "80px";
-      niseLogo.style.height = "60px";
-      niseLogo.style.padding = "5%";
+      nise_Logo.style.height = "60px";
+      nise_Logo.style.paddingLeft = "5%";     
       
     }
+    
   }
   else {
-    if (wWidth > 780) {
+    toTopBtn.style.display = "none";
+    if (scrinWidth > 780) {
       stickyNavbar.style.height = "120px";
-      niseLogo.style.height = "90px";
-      niseLogo.style.paddingLeft = "100%";
+      nise_Logo.style.height = "90px";
+      nise_Logo.style.paddingLeft = "95%";
       
     } else {
       stickyNavbar.style.height = "80px";
-      niseLogo.style.height = "60px";
-      niseLogo.style.padding = "5%";
-      
+      nise_Logo.style.height = "60px";
+      nise_Logo.style.paddingLeft = "5%";      
     }
-    topButton.style.display = "none";
   }
 }
 

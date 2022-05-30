@@ -1,6 +1,8 @@
 html {
   scroll-behavior: smooth;
-  animation-timing-function: ease;
+  animation-timing-function: ease-in-out;
+  font-family: 'Roboto';
+  /* font-family: 'Trebuchet MS'; */
 }
 
 #navbar {
@@ -17,8 +19,8 @@ html {
 }
 
 .navbar .navbar-brand img {
-  max-height: 90px;
-  padding-left: 100%;
+  height: 90px;
+  padding-left: 95%;
   transition: all 300ms ease;
 }
 
@@ -85,7 +87,7 @@ html {
   background-color: transparent;
 }
 .nise-content {
-  height: auto;
+  min-height: 200vh;
   background-image: url("../image/bg3.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -108,31 +110,40 @@ html {
   padding-bottom: 3em;
 }
 
+body h1,h2,h3,h4,h5{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
 .content h1 {
   font-size: 52;
-  font-family: Roboto;
   color: #4E8A10;
   text-shadow: 2px 2px 4px rgba(90, 90, 90, 0.1);
 }
 
 .content h2 {
   font-size: 45;
-  font-family: Roboto;
   color: #4E8A10;
   text-shadow: 2px 2px 4px rgba(90, 90, 90, 0.1);
 }
 
 .people-photo{
-  padding: 0;
-  right: 0;
-  top: 0;
+  padding: 2% 2% 1% 5%;
 }
 
 .people-photo img{
-  border-radius: 10%;
-  width: 100%;
+  border-radius: 3%;
+  width: 95%;
   height: auto;
-  padding: 5% 10%;
+}
+
+.alumni-photo{
+  padding: 2% 2% 1% 5%;
+}
+
+.alumni-photo img{
+  border-radius: 3%;
+  width: 95%;
+  height: auto;
 }
 
 .people-name{
@@ -193,7 +204,7 @@ html {
 
 .activity-img2 {
   object-fit: cover;
-  width: 100%;
+  width: 95%;
   height: 270px;
 }
 
@@ -217,7 +228,7 @@ html {
   padding: 3%;
   margin-bottom: 3%;
   box-shadow: 5px 10px 12px rgba(90, 90, 90, 0.15);
-  border-radius: 0.5%;
+  border-radius: 2%;
 }
 
 .learn-more-btn {
@@ -327,6 +338,8 @@ html {
 /* Set gray background color and 100% height */
 /* Set black background color, white text and some padding */
 footer {
+  /* position: absolute; */
+  bottom: 0;
   background-color: #518d12;
   box-shadow: 0px -2px 7px rgba(90, 90, 90, 0.35);
   color: white;
@@ -446,6 +459,20 @@ footer a:hover {
     width: 100%;
     height: 250px;
   }
+
+  .people-photo{
+    padding: 1% 5% 1% 5%;
+    right: 0;
+    top: 0;
+    text-align: center;
+  }
+  
+  .people-photo img{
+    border-radius: 5%;
+    width: 50%;
+    height: auto;
+  }
+  
 
   #topBtn {
     display: none;

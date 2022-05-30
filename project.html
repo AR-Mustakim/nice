@@ -18,65 +18,7 @@
     />
   </head>
   <body>
-    <div class="nise-navbar">
-      <nav id="navbar" class="navbar fixed-top navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="#">
-          <img
-            id="navbar-nise-logo"
-            src="image/logo.jpg"
-            width="auto"
-            height="90"
-            alt="NiSE logo"
-          />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown"
-          aria-expanded="true"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link">People</a>
-              <div class="dropdown-content">
-                <a href="members.html">Members</a>
-                <a href="alumni.html">Alumni</a>
-              </div>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link" href="#">Research</a>
-              <div class="dropdown-content">
-                <a href="project.html">Project</a>
-                <a href="publication.html">Publications</a>
-                <a href="resources.html">Resources</a>
-              </div>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link" href="#">Activity</a>
-              <div class="dropdown-content">
-                <a href="activity.html">Lab Activities</a>
-                <a href="reading.html">Reading Group</a>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="news.html">News</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </div>
+    <div id="niseNavbar"></div>
 
     <div class="nise-content container-fluid">
       <div class="row content">
@@ -96,7 +38,7 @@
                     Mission-Critical Systems in Socio-Technical Environments:</a
                   >
                 </h4>
-                <hr />
+                <hr>
               </div>
             </div>
             <div class="row project-image-and-description">
@@ -157,7 +99,7 @@
                     Learning:</a
                   >
                 </h4>
-                <hr />
+                <hr>
               </div>
             </div>
             <div class="row project-image-and-description">
@@ -221,7 +163,7 @@
                     Mission-Critical Systems in Socio-Technical Environments:</a
                   >
                 </h4>
-                <hr />
+                <hr>
               </div>
             </div>
             <div class="row project-image-and-description">
@@ -285,7 +227,7 @@
                     Solution:</a
                   >
                 </h4>
-                <hr />
+                <hr>
               </div>
             </div>
             <div class="row project-image-and-description">
@@ -351,7 +293,7 @@
                     Plans:</a
                   >
                 </h4>
-                <hr />
+                <hr>
               </div>
             </div>
             <div class="row project-image-and-description">
@@ -410,7 +352,7 @@
                     >The DITSCAP Automation:</a
                   >
                 </h4>
-                <hr />
+                <hr>
               </div>
             </div>
             <div class="row project-image-and-description">
@@ -469,7 +411,7 @@
                     Mission-Critical Systems in Socio-Technical Environments:</a
                   >
                 </h4>
-                <hr />
+                <hr>
               </div>
             </div>
             <div class="row project-image-and-description">
@@ -534,7 +476,7 @@
                     Needs for Dependable Software:</a
                   >
                 </h4>
-                <hr />
+                <hr>
               </div>
             </div>
             <div class="row project-image-and-description">
@@ -591,7 +533,7 @@
                     >GENeric Object Model (GenOM):</a
                   >
                 </h4>
-                <hr />
+                <hr>
               </div>
             </div>
             <div class="row project-image-and-description">
@@ -727,7 +669,7 @@
                     Problem Frame Artifacts:
                   </a>
                 </h4>
-                <hr />
+                <hr>
               </div>
             </div>
             <div class="row project-image-and-description">
@@ -931,34 +873,13 @@
       </div>
     </div>
 
-    <button onclick="backToTopFunction()" id="topBtn" title="Back to top">
-      <img src="image/top_icon.png" alt="" />
-    </button>
-    <footer class="container-fluid text-center footer-style">
-      <ul class="nav justify-content-center">
-        <li class="nav-item">
-          <a class="nav-link active" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="members.html">People</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Research</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="activity.html">Activity</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="news.html">News</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="help.html">Help</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="contact.html">Contact</a>
-        </li>
-      </ul>
-
+    
+    <footer class="container-fluid text-center">
+      <div id="niseFooterlink"></div>
+      
+      <button onclick="backToTopFunction()" id="topBtn" title="Back to top">
+        <img src="image/top_icon.png" alt="" />
+      </button>
       <p>
         NiSE Research Group<br />
         Department of Software Convergence Technology<br />
@@ -968,7 +889,9 @@
         >
       </p>
     </footer>
-  </body>
 
+  </body>
+  <script src="js/navbar.js"></script>
   <script src="js/script.js"></script>
+  <script src="js/footer.js"></script>
 </html>

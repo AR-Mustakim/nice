@@ -19,59 +19,7 @@
     
   </head>
   <body>
-    <div class="nise-navbar">
-      <nav id="navbar" class="navbar fixed-top navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="#">
-          <img id="navbar-nise-logo" src="image/logo.jpg" width="auto" height="90" alt="NiSE logo" />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown"
-          aria-expanded="true"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link">People</a>
-              <div class="dropdown-content">
-                <a href="members.html">Members</a>
-                <a href="alumni.html">Alumni</a>
-              </div>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link" href="#">Research</a>
-              <div class="dropdown-content">
-                <a href="project.html">Project</a>
-                <a href="publication.html">Publications</a>
-                <a href="resources.html">Resources</a>
-              </div>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link" href="#">Activity</a>
-              <div class="dropdown-content">
-                <a href="activity.html">Lab Activities</a>
-                <a href="reading.html">Reading Group</a>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="news.html">News</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </div>
+    <div id="niseNavbar"></div>
 
     <div class="nise-content container-fluid">
       <div class="row content">
@@ -746,8 +694,6 @@
       </p>
     </footer>
   </body>
-
+  <script src="js/navbar.js"></script>
   <script src="js/script.js"></script>
-
-
 </html>

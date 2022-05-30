@@ -12,54 +12,13 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-
-    <div class="nise-navbar">
-      <nav id="navbar" class="navbar fixed-top navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="#">
-          <img id="navbar-nise-logo" src="image/logo.jpg" width="auto" height="90" alt="NiSE logo" />
-        </a>
-        <!-- <button id="navbarBtn" onclick="closeNavBar" class="nise-navbar-toggler" type="button">
-          <span class="navbar-toggler-icon"></span>
-        </button> -->
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link">People</a>
-              <div class="dropdown-content">
-                <a href="members.html">Members</a>
-                <a href="alumni.html">Alumni</a>
-              </div>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link" href="#">Research</a>
-              <div class="dropdown-content">
-                <a href="project.html">Project</a>
-                <a href="publication.html">Publications</a>
-                <a href="resources.html">Resources</a>
-              </div>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link" href="#">Activity</a>
-              <div class="dropdown-content">
-                <a href="activity.html">Lab Activities</a>
-                <a href="reading.html">Reading Group</a>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="news.html">News</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </div>
+    <div id="niseNavbar"></div>
 
     <div class="nise-content">
       <div class="container-fluid text-center">
@@ -68,7 +27,7 @@
           <div class="col-sm-4 text-left">
             <div class="welcome-text">
               <h1>Welcome</h1>
-              <p>
+              <p style="text-align: justify;">
                 The Knowledge-intensive Software Engineering (NiSE) Research
                 Group performs various researches to improve understanding,
                 representing, and modeling of the complex problem domain from
@@ -112,33 +71,15 @@
       </div>
     </div>
 
-    <button onclick="backToTopFunction()" id="topBtn" title="Back to top"><img src="image/top_icon.png" alt=""></button>
-
+    <button onclick="backToTopFunction()" id="topBtn" title="Back to top">
+      <img src="image/top_icon.png" alt="" />
+    </button>
     <footer class="container-fluid text-center">
-      <ul class="nav justify-content-center">
-        <li class="nav-item">
-          <a class="nav-link active" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="members.html">People</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Research</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="activity.html">Activity</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="news.html">News</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="help.html">Help</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="contact.html">Contact</a>
-        </li>
-      </ul>
-
+      <div id="niseFooterlink"></div>
+      
+      <button onclick="backToTopFunction()" id="topBtn" title="Back to top">
+        <img src="image/top_icon.png" alt="" />
+      </button>
       <p>
         NiSE Research Group<br />
         Department of Software Convergence Technology<br />
@@ -148,7 +89,9 @@
         >
       </p>
     </footer>
-  </body>
 
+  </body>
+  <script src="js/navbar.js"></script>
   <script src="js/script.js"></script>
+  <script src="js/footer.js"></script>
 </html>
