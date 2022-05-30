@@ -152,21 +152,36 @@ navPagesList.appendChild(navbarUL);
 // =========================================================================================
 const niseLogo = document.createElement("img");
 niseLogo.setAttribute("id","niseLogo");
+niseLogo.style.transition = "all 300ms ease";
 niseLogo.setAttribute("src","image/logo.jpg");
 
 const navbarBrand = document.createElement("a");
 navbarBrand.setAttribute("class","navbar-brand");
-navbarBrand.setAttribute("href","index.html");
+navbarBrand.style.transition = "all 300ms ease";
 navbarBrand.appendChild(niseLogo);
 
 const navbarDiv = document.createElement("nav");
 navbarDiv.setAttribute("id","navbar");
 navbarDiv.setAttribute("class","navbar fixed-top navbar-expand-lg navbar-light");
+navbarDiv.style.transition = "all 300ms ease";
 
 navbarDiv.appendChild(navbarBrand);
 navbarDiv.appendChild(navPagesList);
 
 const niseNavbarDiv = document.getElementById("niseNavbar");
 niseNavbarDiv.appendChild(navbarDiv);
-
 // =========================================================================================
+// set the nise Navbar style while upon load the page
+var screenWidth = window.innerWidth;
+
+if (screenWidth>780){
+    navbarDiv.style.height ="120px";
+    niseLogo.style.height ="90px";
+    niseLogo.style.paddingLeft = "95%";  
+}
+else{
+    navbarDiv.style.height ="90px";
+    niseLogo.style.height ="50px";
+    navbarBrand.style.height ="60px";
+    niseLogo.style.paddingLeft = "5%";  
+}
