@@ -16,73 +16,50 @@
   <body>
     <div id="niseNavbar"></div>
 
-    <div class="nise-content">
-      <div class="container-fluid text-left">
-        <div class="row content">
-          <div class="col-sm-2 sidenav"></div>
-          <div class="col-sm-8 contact-text">
-            <h1>Contact us</h1>
-            <hr />
-            <h4>Seok-Won Lee, Ph.D.</h4>
-            <p>
-              Professor of Software Engineering/Artificial Intelligence <br />
-              College of Information and Computer Engineering<br />
-              Ajou University<br />
-              Pal-Dal Hall # 603 <br />
-              San 5, Woncheon-dong, Yeongtong-gu, Suwon, Republic of Korea
-              443-749
-            </p>
+    <div id="niseContent" class="nise-content  container-fluid text-left">
+      <div id="niseContainer" class="row ">
+        <div class="col-sm-2 sidenav"></div>
+        <div class="col-sm-8 contact-text">
+          <h1>Contact us</h1>
+          <hr />
+          <h4>Seok-Won Lee, Ph.D.</h4>
+          <p>
+            Professor of Software Engineering/Artificial Intelligence <br />
+            College of Information and Computer Engineering<br />
+            Ajou University<br />
+            Pal-Dal Hall # 603 <br />
+            San 5, Woncheon-dong, Yeongtong-gu, Suwon, Republic of Korea 443-749
+          </p>
 
-            <br />
-            <p>
-              Office Phone: +82-31-219-3548<br />
-              Fax: +82-31-219-1621<br />
-              Email: leesw @ ajou. ac. kr<br />
-              <a href="http://www.machinediscovery.com"
-                >http://www.machinediscovery.com</a
-              >
-            </p>
+          <br />
+          <p>
+            Office Phone: +82-31-219-3548<br />
+            Fax: +82-31-219-1621<br />
+            Email: leesw @ ajou. ac. kr<br />
+            <a href="http://www.machinediscovery.com"
+              >http://www.machinediscovery.com</a
+            >
+          </p>
 
-            <br />
-            <h5>
-              Knowledge-intensive Software Engineering (NiSE) Research Group
-            </h5>
-            <p>
-              Pal-Dal Hall # 913-1<br />
-              Office Phone: +82-31-219-2442
-            </p>
-          </div>
-          <div class="col-sm-2 sidenav"></div>
+          <br />
+          <h5>
+            Knowledge-intensive Software Engineering (NiSE) Research Group
+          </h5>
+          <p>
+            Pal-Dal Hall # 913-1<br />
+            Office Phone: +82-31-219-2442
+          </p>
         </div>
+        <div class="col-sm-2 sidenav"></div>
       </div>
     </div>
 
-    <button onclick="backToTopFunction()" id="topBtn" title="Back to top"><img src="image/top_icon.png" alt=""></button>
     <footer class="container-fluid text-center">
-      <ul class="nav justify-content-center">
-        <li class="nav-item">
-          <a class="nav-link active" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="members.html">People</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Research</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="activity.html">Activity</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="news.html">News</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="help.html">Help</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="contact.html">Contact</a>
-        </li>
-      </ul>
+      <div id="niseFooterlink"></div>
 
+      <button onclick="backToTopFunction()" id="topBtn" title="Back to top">
+        <img src="image/top_icon.png" alt="" />
+      </button>
       <p>
         NiSE Research Group<br />
         Department of Software Convergence Technology<br />
@@ -94,5 +71,7 @@
     </footer>
   </body>
   <script src="js/navbar.js"></script>
+  <script src="js/content.js"></script>
   <script src="js/script.js"></script>
+  <script src="js/footer.js"></script>
 </html>

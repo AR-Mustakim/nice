@@ -85,6 +85,7 @@ footerUL.appendChild(footerItemPeople);
 footerUL.appendChild(footerItemResearch);
 footerUL.appendChild(footerItemActivity);
 footerUL.appendChild(footerItemNews);
+footerUL.appendChild(footerItemHelp);
 footerUL.appendChild(footerItemContact);
 
 // .........................................................................................
