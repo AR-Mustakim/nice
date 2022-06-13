@@ -3,11 +3,11 @@
 // ============================================
 
 const niseContent = document.getElementById("niseContent");
+niseContent.style.backgroundImage ="url('image/bg3.jpg')";
+niseContent.style.backgroundSize ="cover";
+niseContent.style.backgroundRepeat ="no-repeat";
 
 const niseContainer = document.getElementById("niseContainer");
-niseContainer.style.backgroundImage ="url('image/bg3.jpg')";
-niseContainer.style.backgroundSize ="cover";
-niseContainer.style.backgroundRepeat ="no-repeat";
 
 
 if (screenWidth>780){
