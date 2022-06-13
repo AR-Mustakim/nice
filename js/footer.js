@@ -13,7 +13,7 @@ footerItemContact.appendChild(footerLinkContact);
 // -------------------------------------------------------Start Help
 const footerLinkHelp = document.createElement("a");
 footerLinkHelp.setAttribute("class","nav-link");
-footerLinkHelp.setAttribute("href","test2.html");
+footerLinkHelp.setAttribute("href","help.html");
 const footerNodeHelp = document.createTextNode("Help");
 footerLinkHelp.appendChild(footerNodeHelp);
 
@@ -46,7 +46,7 @@ footerItemActivity.appendChild(footerLinkActivity);
 // -------------------------------------------------------Start Research
 const footerLinkResearch = document.createElement("a");
 footerLinkResearch.setAttribute("class","nav-link");
-footerLinkResearch.setAttribute("href","publication2.html");
+footerLinkResearch.setAttribute("href","publication.html");
 const footerNodeResearch = document.createTextNode("Research");
 footerLinkResearch.appendChild(footerNodeResearch);
 

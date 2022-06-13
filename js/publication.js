@@ -12,50 +12,597 @@ let journal = [
     },
 
     "Level": "International",
-    "Peprint": "dasdasdasdasdasdasd",
+    "Source": "https://www.machinediscovery.com/nise/Papers/Preprint-ICSE_NIER_2022-Dey_Lee.pdf",
   },
   {
-    "Authors": "Sangeeta Dey, person 2021",
-    "Title": "Are We Training with The Right Data? Evaluating Collective Confidence in Training Data using Dempster Shafer Theory",
-    "Published": "The 44th International Conference on Software Engineering (ICSE 2022) New Ideas and Emerging Results (NIER)",
+    "Authors": "Sangeeta Dey, Seok-Won Lee",
+    "Title": "Multilayered Review of Safety Approaches for Machine Learning-based Systems in the Days of AI",
+    "Published": "Journal of Systems and Software",
     "Date":
     {
-      "Day": "25",
-      "Month": "May",
+      "Day": "",
+      "Month": "",
       "Year": "2021",
     },
 
     "Level": "International",
-    "Peprint": "NA",
+    "Source": "http://www.machinediscovery.com/nise/Papers/Multilayered_Review_of_Safety_AI_JSS_2021.pdf",
   },
   {
-    "Authors": "person 1 person 2018",
-    "Title": "2020-01-05 13:42:19.324003",
-    "Published": "https://assets.chucknorris.host/img/avatar/chuck-norris.png",
+    "Authors": "Singh, Irish, and Seok-Won Lee",
+    "Title": "Self-adaptive and secure mechanism for IoT based multimedia services: a survey.",
+    "Published": "Multimedia Tools and Applications (2021): 1-36",
     "Date":
     {
-      "Day": "25",
-      "Month": "May",
+      "Day": "",
+      "Month": "",
+      "Year": "2021",
+    },
+
+    "Level": "",
+    "Source": "https://link.springer.com/article/10.1007/s11042-020-10493-5",
+  },
+  {
+    "Authors": "Saputri, Theresia Ratih Dewi, and Seok-Won Lee",
+    "Title": "Integrated framework for incorporating sustainability design in software engineering life-cycle: An empirical study",
+    "Published": "Information and Software Technology 129 (2021): 106407",
+    "Date":
+    {
+      "Day": "",
+      "Month": "",
+      "Year": "2021",
+    },
+
+    "Level": "",
+    "Source": "https://www.sciencedirect.com/science/article/abs/pii/S0950584920301701",
+  },
+  {
+    "Authors": "MinJu Kim, Sihn-Hye Park, and Seok-Won Lee",
+    "Title": "A Security Requirements Recommendation Framework Based on APT Attack Cases",
+    "Published": " Journal of KIISE, vol. 48, (9), pp.1014-1025",
+    "Date":
+    {
+      "Day": "",
+      "Month": "",
+      "Year": "2021",
+    },
+
+    "Level": "",
+    "Source": "",
+  },
+  {
+    "Authors": "Ji-Wook Jung, Sihn-Hye Park, and Seok-Won Lee",
+    "Title": "A Tool for Security Requirements Recommendation using Case-Based Problem Domain Ontology,",
+    "Published": "2021 IEEE 29th International Requirements Engineering Conference (RE)",
+    "Date":
+    {
+      "Day": "",
+      "Month": "November",
+      "Year": "2021",
+    },
+
+    "Level": "International",
+    "Source": "https://ieeexplore.ieee.org/document/9604682/authors#authors",
+  },
+  {
+    "Authors": "Sihn-Hye Park, Ji-Wook Jung, and Seok-Won Lee",
+    "Title": "Multi-perspective APT Attack Risk Assessment Framework using Risk-Aware Problem Domain Ontology",
+    "Published": "2021 IEEE 29th International Requirements Engineering Conference Workshops (REW)",
+    "Date":
+    {
+      "Day": "",
+      "Month": "October",
+      "Year": "2021",
+    },
+
+    "Level": "International",
+    "Source": "https://ieeexplore.ieee.org/abstract/document/9582414",
+  },
+  {
+    "Authors": "",
+    "Title": "",
+    "Published": "",
+    "Date":
+    {
+      "Day": "",
+      "Month": "",
+      "Year": "",
+    },
+
+    "Level": "",
+    "Source": "",
+  },
+  {
+    "Authors": "",
+    "Title": "",
+    "Published": "",
+    "Date":
+    {
+      "Day": "",
+      "Month": "",
+      "Year": "",
+    },
+
+    "Level": "",
+    "Source": "",
+  },
+  {
+    "Authors": "",
+    "Title": "",
+    "Published": "",
+    "Date":
+    {
+      "Day": "",
+      "Month": "",
+      "Year": "",
+    },
+
+    "Level": "",
+    "Source": "",
+  },
+  {
+    "Authors": "",
+    "Title": "",
+    "Published": "",
+    "Date":
+    {
+      "Day": "",
+      "Month": "",
+      "Year": "",
+    },
+
+    "Level": "",
+    "Source": "",
+  },
+  {
+    "Authors": "",
+    "Title": "",
+    "Published": "",
+    "Date":
+    {
+      "Day": "",
+      "Month": "",
+      "Year": "",
+    },
+
+    "Level": "",
+    "Source": "",
+  },
+  {
+    "Authors": "Kim, Bong-Jae, and Seok-Won Lee",
+    "Title": "Understanding and recommending security requirements from problem domain ontology: A cognitive three-layered approach.",
+    "Published": " Journal of Systems and Software 169 (2020): 110695",
+    "Date":
+    {
+      "Day": "",
+      "Month": "",
+      "Year": "2020",
+    },
+
+    "Level": "International",
+    "Source": "https://www.sciencedirect.com/science/article/abs/pii/S016412122030145X",
+  },
+  {
+    "Authors": "Singh, Irish, and Seok-Won Lee",
+    "Title": "RE_BBC: Requirements Engineering in a Blockchain-Based Cloud: Its Role in Service-Level Agreement Specification.",
+    "Published": "IEEE Software 37.5 (2020): 7-12",
+    "Date":
+    {
+      "Day": "",
+      "Month": "",
+      "Year": "2020",
+    },
+
+    "Level": "International",
+    "Source": "https://ieeexplore.ieee.org/abstract/document/9173618",
+  },
+  {
+    "Authors": "Saputri, Theresia Ratih Dewi, and Seok-Won Lee",
+    "Title": "The Application of Machine Learning in Self-Adaptive Systems: A Systematic Literature Review.",
+    "Published": "IEEE Access 8 (2020): 205948-205967.",
+    "Date":
+    {
+      "Day": "",
+      "Month": "",
+      "Year": "2020",
+    },
+
+    "Level": "International",
+    "Source": "https://ieeexplore.ieee.org/abstract/document/9249012",
+  },
+  {
+    "Authors": "Ahmed Abdo Ali Saeed ,  Seok-Won Lee",
+    "Title": "Reasoning Non-Functional Requirements Trade-off in Self-Adaptive Systems Using Multi-Entity Bayesian Network Modeling",
+    "Published": "한국컴퓨터정보학회논문지, Volume 24 (3) (2019): 65-75.",
+    "Date":
+    {
+      "Day": "",
+      "Month": "",
+      "Year": "2019",
+    },
+
+    "Level": "Domestic",
+    "Source": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE07967424&language=ko_KR&hasTopBanner=true",
+  },
+  {
+    "Authors": "Woogon Shim, Seok-Won Lee",
+    "Title": "An Agile Approach for Managing Requirements Change to Improve Learning and Adaptability",
+    "Published": "Journal of Industrial Information Integration, pp. 16-23, Vol.14 SCIE Indexed, Elsevier Journal",
+    "Date":
+    {
+      "Day": "",
+      "Month": "June",
+      "Year": "2019",
+    },
+
+    "Level": "International",
+    "Source": "https://www.sciencedirect.com/science/article/abs/pii/S2452414X17300717",
+  },
+  {
+    "Authors": "Mukundwa, Chantal, and Seok-Won Lee",
+    "Title": "A Collaborative Requirements Elicitation Model For Crowdsourcing Platforms.",
+    "Published": "한국컴퓨터정보학회논문지, Volume 24 (3) (2019): 95-104.",
+    "Date":
+    {
+      "Day": "",
+      "Month": "Domestic",
+      "Year": "2019",
+    },
+
+    "Level": "International",
+    "Source": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE07967427&language=ko_KR&hasTopBanner=true",
+  },
+  {
+    "Authors": "Kim, Hee-Soo, and Seok-Won Lee",
+    "Title": "Dependability-Enhanced Unified Modeling and Simulation Methodology for Critical Infrastructures.",
+    "Published": "Information and Software Technology, Volume 102, 175-192.",
+    "Date":
+    {
+      "Day": "",
+      "Month": "October",
       "Year": "2018",
     },
 
-    "Level": "Domestic",
-    "Peprint": "NA",
+    "Level": "",
+    "Source": "https://www.sciencedirect.com/journal/information-and-software-technology/vol/102/suppl/C",
   },
   {
-    "Authors": "person 2005 person 2",
-    "Title": "2020-01-05 13:42:19.324003",
-    "Published": "https://assets.chucknorris.host/img/avatar/chuck-norris.png",
+    "Authors": "Hyo-Cheol Lee and Seok-Won Lee",
+    "Title": "Unified learning to enhance adaptive behavior of simulation objects",
+    "Published": "Simulation: Transactions of the Society for Modeling and Simulation International, SAGE, Online Published",
     "Date":
     {
-      "Day": "25",
-      "Month": "May",
-      "Year": "2005",
+      "Day": "",
+      "Month": "February",
+      "Year": "2018",
+    },
+
+    "Level": "",
+    "Source": "https://journals.sagepub.com/doi/full/10.1177/0037549717753880",
+  },
+  {
+    "Authors": "박평우, 김민구, 임홍석, 윤덕용, 이석원",
+    "Title": "허혈성 심장질환 진단을 위한 기계 학습 알고리즘 비교 연구",
+    "Published": "한국컴퓨터정보학회논문지, Volume 45 (4) (2018): 376-389",
+    "Date":
+    {
+      "Day": "",
+      "Month": "",
+      "Year": "2018",
+    },
+
+    "Level": "",
+    "Source": "https://www.dbpia.co.kr/journal/voisDetail?voisId=VOIS00360853&language=ko_KR&hasTopBanner=true",
+  },
+  {
+    "Authors": "Dey Sangeeta, Seok-Won Lee",
+    "Title": "REASSURE: Requirements elicitation for adaptive socio-technical systems using repertory grid",
+    "Published": "Information and Software Technology, Volume 87, p.160 - 179",
+    "Date":
+    {
+      "Day": "",
+      "Month": "July",
+      "Year": "2017",
+    },
+
+    "Level": "International",
+    "Source": "https://www.sciencedirect.com/science/article/abs/pii/S095058491730229X",
+  },
+  {
+    "Authors": "조주혜, 이석원",
+    "Title": "프라이버시 친화 시스템 개발을 위한 프라이버시 요구사항 도출 및 보중 사례 작성",
+    "Published": "한국컴퓨터정보학회논문지, Volume 44 (9), (2017.9). 918-931",
+    "Date":
+    {
+      "Day": "",
+      "Month": "September",
+      "Year": "2017",
     },
 
     "Level": "Domestic",
-    "Peprint": "as123456431263146413643",
-  }
+    "Source": "https://www.dbpia.co.kr/journal/voisDetail?voisId=VOIS00302933&language=ko_KR&hasTopBanner=true",
+  },
+  {
+    "Authors": "임혜선, 이석원",
+    "Title": "안전 필수 시스템을 위한 요구사항 명세 및 검증 방법",
+    "Published": " 한국컴퓨터정보학회논문지, Volume 44 (9), (2017.9). 893-907",
+    "Date":
+    {
+      "Day": "",
+      "Month": "September",
+      "Year": "2017",
+    },
+
+    "Level": "Domestic",
+    "Source": "https://www.dbpia.co.kr/journal/voisDetail?voisId=VOIS00302933&language=ko_KR&hasTopBanner=true",
+  },
+  {
+    "Authors": "Meetushi, 이석원",
+    "Title": "A framework integrating problem frames and goal modeling to support variability analysis during requirements elicitation",
+    "Published": "한국컴퓨터정보학회논문지, Volume 44 (3), (2017.3). 261-274.",
+    "Date":
+    {
+      "Day": "",
+      "Month": "March",
+      "Year": "2017",
+    },
+
+    "Level": "Domestic",
+    "Source": "https://www.dbpia.co.kr/journal/voisDetail?voisId=VOIS00296242&language=ko_KR&hasTopBanner=true",
+  },
+  {
+    "Authors": "박현주, 이석원",
+    "Title": "품질속성의 트레이트오프 분석을 통한 아키텍처 패턴 추천 방법",
+    "Published": "한국컴퓨터정보학회논문지, Volume 44 (2), (2017.2). 148-162.",
+    "Date":
+    {
+      "Day": "",
+      "Month": "February",
+      "Year": "2017",
+    },
+
+    "Level": "Domestic",
+    "Source": "https://www.dbpia.co.kr/journal/voisDetail?voisId=VOIS00295250&language=ko_KR&hasTopBanner=true",
+  },
+  {
+    "Authors": "박기범, 이석원",
+    "Title": "적응형 사용자 인터페이스 개발을 위한 요구사항 도출 및 명세 기법",
+    "Published": "한국컴퓨터정보학회논문지, Volume 44 (1), (2017.1). 27-35.",
+    "Date":
+    {
+      "Day": "",
+      "Month": "January",
+      "Year": "2017",
+    },
+
+    "Level": "Domestic",
+    "Source": "https://www.dbpia.co.kr/journal/voisDetail?voisId=VOIS00292648&language=ko_KR&hasTopBanner=true",
+  },
+  {
+    "Authors": "Theresia Ratih Dewi Saputri, Seok-Won Lee",
+    "Title": "A Study of Cross-National Differences in Happiness Factors Using Machine Learning Approach",
+    "Published": "International Journal of Software Engineering and Knowledge Engineering, Vol.25, pp1699 - 1702",
+    "Date":
+    {
+      "Day": "",
+      "Month": "February",
+      "Year": "2016",
+    },
+
+    "Level": "",
+    "Source": "",
+  },
+  {
+    "Authors": "이관홍, 이석원.",
+    "Title": "게임 이론적 접근을 통한 효과적인 윈윈 요구사항 협상 기법",
+    "Published": "한국컴퓨터정보학회논문지, Volume 43 (8), 857-868",
+    "Date":
+    {
+      "Day": "",
+      "Month": "August ",
+      "Year": "2016",
+    },
+
+    "Level": "Domestic",
+    "Source": "https://www.dbpia.co.kr/journal/voisDetail?voisId=VOIS00273885&language=ko_KR&hasTopBanner=true",
+  },
+  {
+    "Authors": "서창원, 이석원",
+    "Title": "스마트 홈 시스템의 효과적인 운영을 위한 계층적 업무 네트워크 계획 코드 자동 생성 방법",
+    "Published": "한국차세대컴퓨팅학회 논문지, Volume 12 (1). 7-23.",
+    "Date":
+    {
+      "Day": "",
+      "Month": "",
+      "Year": "2016",
+    },
+
+    "Level": "Domestic",
+    "Source": "https://www.earticle.net/Article/A263692",
+  },
+  {
+    "Authors": "김시헌, 이석원",
+    "Title": "사회적 특성을 활용한 에이전트 기반 모델링 및 시뮬레이션 방법: 트로포스에 기반한 자가 적응적 스마트 그리드와 군 도메인 시스템에서의 적용 사례",
+    "Published": "정보과학회논문지, Volume 42 (12), 1503-1521.",
+    "Date":
+    {
+      "Day": "",
+      "Month": "December",
+      "Year": "2015",
+    },
+
+    "Level": "Domestic",
+    "Source": "https://www.dbpia.co.kr/journal/voisDetail?voisId=VOIS00244675&language=ko_KR&hasTopBanner=true",
+  },
+  {
+    "Authors": "정창희, 이석원",
+    "Title": "서비스 지향 컴퓨팅 환경에서 서비스 안정성 케이스 기반 자가 적응 방법",
+    "Published": "정보과학회논문지, Volume 42 (11). 1339-1348.",
+    "Date":
+    {
+      "Day": "",
+      "Month": "November",
+      "Year": "2015",
+    },
+
+    "Level": "Domestic",
+    "Source": "https://www.dbpia.co.kr/journal/voisDetail?voisId=VOIS00243642&language=ko_KR&hasTopBanner=true",
+  },
+  {
+    "Authors": "김옥섭, 이석원",
+    "Title": "감정 온톨로지 기반의 영화 추천 기법",
+    "Published": "한국멀티미디어학회, Volume 18 (9), (2015.09). 1068-1082.",
+    "Date":
+    {
+      "Day": "",
+      "Month": "September",
+      "Year": "2015",
+    },
+
+    "Level": "Domestic",
+    "Source": "https://www.dbpia.co.kr/journal/voisDetail?voisId=VOIS00242251&language=ko_KR&hasTopBanner=true",
+  },
+  {
+    "Authors": "Jonathan Sawyer, Seok-Won Lee",
+    "Title": "Running a SCRUM project within a Document Driven Process : An Experimental Case Study Report",
+    "Published": "정보과학회논문지, Volume 42 (9), (2015.09). 1133-1146",
+    "Date":
+    {
+      "Day": "",
+      "Month": "September",
+      "Year": "2015",
+    },
+
+    "Level": "Domestic",
+    "Source": "https://www.dbpia.co.kr/journal/voisDetail?voisId=VOIS00241701&language=ko_KR&hasTopBanner=true",
+  },
+  {
+    "Authors": "이효철, 이석원",
+    "Title": "시뮬레이션의 동적인 행위 계획을 위한 통합 학습 방법",
+    "Published": "한국차세대컴퓨팅학회 논문지, Volume 11 (2), (2015.04). pp.49-65.",
+    "Date":
+    {
+      "Day": "",
+      "Month": "April",
+      "Year": "2015",
+    },
+
+    "Level": "Domestic",
+    "Source": "https://www.earticle.net/Article/A246107",
+  },
+  {
+    "Authors": "Yun, Nam-Yi, and Seok-Won Lee",
+    "Title": "Analysis of effectiveness of tsunami evacuation principles in the 2011 Great East Japan tsunami by using text mining",
+    "Published": "Multimedia Tools and Applications, , Volume 75 (20), (2016.10), 12955-1296",
+    "Date":
+    {
+      "Day": "14",
+      "Month": "November",
+      "Year": "2014",
+    },
+
+    "Level": "International",
+    "Source": "https://link.springer.com/article/10.1007/s11042-014-2326-2",
+  },
+  {
+    "Authors": "Keonsoo Lee, Seungmin Rho, Seok-won Lee",
+    "Title": "A Method of Extracting Ontology Module using Concept Relations for Sharing Knowledge in Mobile Cloud Computing Environment",
+    "Published": "The Scientific World Journal, HINDAWI Publishing Corporation, 1-7p, 2014.11, SCIE (IF=1.73)",
+    "Date":
+    {
+      "Day": "",
+      "Month": "November",
+      "Year": "2014",
+    },
+
+    "Level": "International",
+    "Source": "https://www.springer.com/journal/10660",
+  },
+  {
+    "Authors": "Muhammad Hameed Sidd, Seok-won Lee, Adil mehmood Khan",
+    "Title": "Weed Image Classification using Wavelet Transform, Stepwise Linear Discriminant Analysis, and Support Vetor Machines for an Automatic Spray Control System",
+    "Published": "Journal of Information Science and Engineering, INST Information Science, Vol.30, No.4, 1227-1244p.",
+    "Date":
+    {
+      "Day": "",
+      "Month": "June",
+      "Year": "2014",
+    },
+
+    "Level": "International",
+    "Source": "https://jise.iis.sinica.edu.tw/",
+  },
+  {
+    "Authors": "Keon-soo Lee, Seug-min Noh, Seok-won Lee",
+    "Title": "A Novel Approach to Make Better Recommendations by Revealing Hidden Desires and Information Curation",
+    "Published": "Electronic Commerce Research, Springer, Vol.14, No.4, 1-27p",
+    "Date":
+    {
+      "Day": "",
+      "Month": "April",
+      "Year": "2014",
+    },
+
+    "Level": "International",
+    "Source": "",
+  },
+  {
+    "Authors": "Theresia Ratih Dewi Saputri, Adil Mehmood Khan, Seok-won Lee",
+    "Title": "User-Independent Activity Recognition via Three-Stage GA-Based Feature Selection",
+    "Published": " International Journal of Distributed Sensor Networks, HINDAWI Publishing Corporation, Vol.2014, 1-15p",
+    "Date":
+    {
+      "Day": "",
+      "Month": "April",
+      "Year": "2014",
+    },
+
+    "Level": "International",
+    "Source": "",
+  },
+  {
+    "Authors": "Daniel Aceituna, Gursimran Walia, Hyunsook Do, Seok-Won Le",
+    "Title": "Model-based requirements verification method: Conclusions from two controlled experiments",
+    "Published": "Information and Software Technology, Volume 56 (3), (2014): 321-334",
+    "Date":
+    {
+      "Day": "",
+      "Month": "March",
+      "Year": "2014",
+    },
+
+    "Level": "International",
+    "Source": "https://www.sciencedirect.com/science/article/abs/pii/S0950584913002188",
+  },
+  {
+    "Authors": "우인희, 이석원",
+    "Title": "자가 적응 시스템의 개발을 위한 요구사항과 아키텍처의 인터위빙 방법",
+    "Published": "정보과학회 논문지: 소프트웨어 및 응용, 한국정보과학회, 41권 7호, 457-468p",
+    "Date":
+    {
+      "Day": "",
+      "Month": "June",
+      "Year": "2014",
+    },
+
+    "Level": "",
+    "Source": "",
+  },
+  {
+    "Authors": "",
+    "Title": "",
+    "Published": "",
+    "Date":
+    {
+      "Day": "",
+      "Month": "",
+      "Year": "",
+    },
+
+    "Level": "",
+    "Source": "",
+  },
+  
 ]
 
 
@@ -76,7 +623,7 @@ const book = [
       "Year": "2022",
     },
     "Year": "2022",
-    "Peprint": "",
+    "Source": "",
   },
   {
     "Authors": "person 1 person 2",
@@ -89,7 +636,7 @@ const book = [
       "Year": "2022",
     },
 
-    "Peprint": null,
+    "Source": null,
   },
   {
     "Authors": "person 1 person 2",
@@ -102,7 +649,7 @@ const book = [
       "Year": "2022",
     },
 
-    "Peprint": "",
+    "Source": "",
   }
 ]
 
@@ -124,7 +671,7 @@ const magazine = [
       "Year": "2022",
     },
     "Year": "2022",
-    "Peprint": "",
+    "Source": "",
   },
   {
     "Authors": "person 1 person 2",
@@ -137,7 +684,7 @@ const magazine = [
       "Year": "2022",
     },
 
-    "Peprint": null,
+    "Source": null,
   },
   {
     "Authors": "person 1 person 2",
@@ -150,7 +697,7 @@ const magazine = [
       "Year": "2022",
     },
 
-    "Peprint": "",
+    "Source": "",
   }
 ]
 
@@ -171,7 +718,7 @@ const conference = [
       "Year": "2022",
     },
     "Year": "2022",
-    "Peprint": "",
+    "Source": "",
   },
   {
     "Authors": "person 1 person 2",
@@ -184,7 +731,7 @@ const conference = [
       "Year": "2022",
     },
 
-    "Peprint": null,
+    "Source": null,
   },
   {
     "Authors": "person 1 person 2",
@@ -197,7 +744,7 @@ const conference = [
       "Year": "2022",
     },
 
-    "Peprint": "",
+    "Source": "",
   }
 ]
 
@@ -218,7 +765,7 @@ const thesis = [
       "Year": "2022",
     },
     "Year": "2022",
-    "Peprint": "",
+    "Source": "",
   },
   {
     "Authors": "person 1 person 2",
@@ -231,7 +778,7 @@ const thesis = [
       "Year": "2022",
     },
 
-    "Peprint": null,
+    "Source": null,
   },
   {
     "Authors": "person 1 person 2",
@@ -244,7 +791,7 @@ const thesis = [
       "Year": "2022",
     },
 
-    "Peprint": "",
+    "Source": "",
   }
 ]
 
@@ -262,66 +809,54 @@ const months = ['January', 'February', 'March', 'April', 'May', 'June',
   'July', 'August', 'September', 'October', 'November', 'December'];
 
 
-// years = [];
-// for(var i=0; i<= journal.length; i++){
-//   // years.push(journal[i].Date.Year);
-//   let tahun = journal[i].Date.Year;
-//   console.log(tahun);
-//   years.push(tahun);
-// }
-// newList = journal.rows.map(e => e.Date.Year);
-// console.log("--------------------"+newList);   
-
-
-// console.log("Selamat Datang");
-
 const journalContainer = document.getElementById("journalContainer");
 for (i = 0; i <= journal.length; i++) {
 
+  if (journal[i].Authors != "" && journal[i].Title != "") {
+    
+    var lb1 = document.createElement("br");
+    var lb2 = document.createElement("br");
+    const jAuthors = document.createTextNode(journal[i].Authors + ", ");
+    var spanJTitle = document.createElement("span");
+    const jTitle = document.createTextNode('"'+journal[i].Title + '", ');
+    // spanJTitle.style = "font-weight: 500;";
+    spanJTitle.style.fontWeight = "500";
+    spanJTitle.appendChild(lb1);
+    spanJTitle.appendChild(jTitle);
+    spanJTitle.appendChild(lb2);
+    const jPublished = document.createTextNode(journal[i].Published + ", ");
+    const jDate = document.createTextNode(journal[i].Date.Month + " " + journal[i].Date.Day + " " + journal[i].Date.Year + ". ");
+    
+    const jSource = document.createElement("a");
+    
+    if (journal[i].Source != "") {
+      jSource.setAttribute("href", journal[i].Source);
+      var nodeSource = document.createTextNode(" [View] ");
+      jSource.appendChild(nodeSource);
 
-  const jAuthors = document.createTextNode(journal[i].Authors + ", ");
-  
-  var spanTitle = document.createElement("span");
-  const jTitle = document.createTextNode(journal[i].Title + ", ");
-  spanTitle.style = "font-weight: 500;";
-  spanTitle.appendChild(jTitle);
-  const jPublished = document.createTextNode(journal[i].Published + ", ");
-  const jDate = document.createTextNode(journal[i].Date.Month + " " + journal[i].Date.Day + "," + journal[i].Date.Year + ". ");
-  // const jYear = document.createTextNode(journal[i].Year+ ".");
-  const jPeprint = document.createElement("a");
+    } else {
+      var nodeSource = document.createTextNode(" ");
+      jSource.appendChild(nodeSource);
+    }
+    
+    var paperContainer = document.createElement("p");
+    paperContainer.style.display = "block";
+    paperContainer.style.padding = "1%";
+    paperContainer.style.margin = "0%";
+    paperContainer.style.color = "#000000";
+    paperContainer.appendChild(jAuthors);
+    paperContainer.appendChild(spanJTitle);
+    paperContainer.appendChild(jPublished);
+    paperContainer.appendChild(jDate);
+    paperContainer.appendChild(jSource);
 
-  if (journal[i].Peprint != "NA") {
-    jPeprint.setAttribute("href", journal[i].Peprint);
-    var nodePeprint = document.createTextNode(" [PePrint] ");
-    jPeprint.appendChild(nodePeprint);
+    // for the styling purpose
+    journalContainer.appendChild(paperContainer);
+    if (i % 2 == 0) {
+      paperContainer.style.backgroundColor = "#F6FDED";
+    }
 
-  } else {
-    var nodePeprint = document.createTextNode(" .");
-    jPeprint.appendChild(nodePeprint);
   }
 
-  var paperContainer = document.createElement("p");
-  paperContainer.style.display = "block";
-  paperContainer.style.padding = "1%";
-  paperContainer.style.margin = "0%";
-  paperContainer.style.color = "#000000";
-  paperContainer.appendChild(jAuthors);
-  paperContainer.appendChild(spanTitle);
-  paperContainer.appendChild(jPublished);
-  paperContainer.appendChild(jDate);
-  // paperContainer.appendChild(jYear);
-  paperContainer.appendChild(jPeprint);
-
-  // for the styling purpose
-  journalContainer.appendChild(paperContainer);
-  if (i % 2 == 0) {
-    paperContainer.style.backgroundColor = "#F6FDED";
-  }
 }
 
-
-fetch("js/stud.json")
-  .then((response) => {
-    return response.json();
-  })
-  .then((jsondata) => console.log(jsondata));
