@@ -1,7 +1,6 @@
 //Get the button
 var toTopBtn = document.getElementById("topBtn");
-var toggleBtn = document.getElementById("navbarBtn")
-var toggleContainer = document.getElementById("niseNavbarToggler")
+var navCloseBtn = document.getElementById("navCloseBtn")
 var stickyNavbar = document.getElementById("navbar")
 var nise_Logo = document.getElementById("niseLogo")
 var limit = Math.max(document.body.scrollHeight, document.body.offsetHeight,
@@ -10,6 +9,7 @@ var limit = Math.max(document.body.scrollHeight, document.body.offsetHeight,
 var scrheight = screen.height;
 var scrinWidth = window.innerWidth;
 var triggerPoint = limit-scrheight*1.2;
+
 
 // When the user scrolls down 300px from the top of the document,the button appear
 window.onscroll = function () { scrollFunction() };
@@ -29,7 +29,8 @@ function scrollFunction() {
     else{
       stickyNavbar.style.height = "65px";
       nise_Logo.style.height = "45px";
-      nise_Logo.style.paddingLeft = "5%";          
+      nise_Logo.style.paddingLeft = "5%"; 
+      navCloseBtn.style.top = "20px";
     }
     
   }
@@ -45,7 +46,8 @@ function scrollFunction() {
       // for laptop or pc view
       stickyNavbar.style.height = "90px";
       nise_Logo.style.height = "50px";
-      nise_Logo.style.paddingLeft = "5%";      
+      nise_Logo.style.paddingLeft = "5%";
+      navCloseBtn.style.top = "28px";      
     }
   }
 }
@@ -56,9 +58,6 @@ function backToTopFunction() {
   document.documentElement.scrollTop = 0;
 }
 
-function closeNavBar() {
-  toggleContainer.style.visibility = 'hidden';
-}
 
 function openModal(clicked_id) {
   // console.log('The modal id is ---> '+clicked_id);

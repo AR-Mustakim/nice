@@ -121,13 +121,13 @@ itemPeople.appendChild(dropdownPeopleDiv);
 // -------------------------------------------------------End People
 
 // -------------------------------------------------------Start Home
-const linkHome = document.createElement("a");
+var linkHome = document.createElement("a");
 linkHome.setAttribute("class","nav-link");
 linkHome.setAttribute("href","index.html");
-const nodeHome = document.createTextNode("Home");
+var nodeHome = document.createTextNode("Home");
 linkHome.appendChild(nodeHome);
 
-const itemHome = document.createElement("li");
+var itemHome = document.createElement("li");
 itemHome.setAttribute("class","nav-item");
 itemHome.appendChild(linkHome);
 // -------------------------------------------------------End Home
@@ -136,12 +136,12 @@ itemHome.appendChild(linkHome);
 const navbarUL = document.createElement("ul");
 navbarUL.setAttribute("class","navbar-nav ml-auto");
 
-navbarUL.appendChild(itemHome);
-navbarUL.appendChild(itemPeople);
-navbarUL.appendChild(itemResearch);
-navbarUL.appendChild(itemActivity);
-navbarUL.appendChild(itemNews);
-navbarUL.appendChild(itemContact);
+navbarUL.appendChild(itemHome.cloneNode(true));
+navbarUL.appendChild(itemPeople.cloneNode(true));
+navbarUL.appendChild(itemResearch.cloneNode(true));
+navbarUL.appendChild(itemActivity.cloneNode(true));
+navbarUL.appendChild(itemNews.cloneNode(true));
+navbarUL.appendChild(itemContact.cloneNode(true));
 
 const navPagesList = document.createElement("div");
 navPagesList.setAttribute("id","navPagesList");
@@ -149,6 +149,9 @@ navPagesList.setAttribute("class","collapse navbar-collapse");
 navPagesList.appendChild(navbarUL);
 
 // .........................................................................................
+// *****************************************************************************************
+//                                Mobile View Navigation
+// *****************************************************************************************
 
 
 
@@ -160,50 +163,70 @@ navButton.style.height = "30px";
 navButton.style.padding = "0";
 
 
-// .....................................
-// navToggle Container content
+
+// ************************************* navToggle Container content
+
 const navCloseButton = document.createElement("button");
 navCloseButton.setAttribute("id","navCloseBtn");
 navCloseButton.setAttribute("onclick","navCloseBtnOnClick()");
 navCloseButton.style.width = "40px";
 navCloseButton.style.height = "30px";
 navCloseButton.style.padding = "0";
+
 const navCloseBtnImg = document.createElement("img");
 navCloseBtnImg.setAttribute("src","image/navCloseBtn.png");
 navCloseButton.appendChild(navCloseBtnImg);
 
+const toggleNavUl = document.createElement("ul");
+toggleNavUl.appendChild(itemHome.cloneNode(true));
+toggleNavUl.appendChild(itemPeople.cloneNode(true));
+toggleNavUl.appendChild(itemResearch.cloneNode(true));
+toggleNavUl.appendChild(itemActivity.cloneNode(true));
+toggleNavUl.appendChild(itemNews.cloneNode(true));
+toggleNavUl.appendChild(itemContact.cloneNode(true));
 
+
+const toggleNavDiv = document.createElement("div");
+toggleNavDiv.setAttribute("class","toggleNavDiv");
+toggleNavDiv.appendChild(toggleNavUl);
 
 
 const navToggleContainer = document.createElement("div");
 navToggleContainer.setAttribute("id","navToggleContainer");
 navToggleContainer.style.display = "none";
-navToggleContainer.style.right = "0px";
-navToggleContainer.style.width = "50vw";
+navToggleContainer.style.right = "-300px";
+navToggleContainer.style.width = "45vw";
 navToggleContainer.style.height = "100vh";
 navToggleContainer.style.zIndex = "10000";
 navToggleContainer.style.position = "fixed";
-navToggleContainer.appendChild(navCloseButton)
-
-
+navToggleContainer.appendChild(navCloseButton);
+navToggleContainer.appendChild(toggleNavDiv);
 
 
 const navBtnImg = document.createElement("img");
 navBtnImg.setAttribute("src","image/navBtn.png");
 navButton.appendChild(navBtnImg);
 
-
-function navBtnOnClick() {
-    
+function navBtnOnClick() {    
     navToggleContainer.style.display = "block";
-  }
+    navToggleContainer.style.right = "0px";
+    navButton.style.opacity ="0"
+    navCloseBtnImg.style.animation ="unsqueeze 300ms";
+    navCloseButton.style.visibility ="visible";
+}
 
 function navCloseBtnOnClick() {
-    navToggleContainer.style.display = "none";
+    navToggleContainer.style.displa = "none";
+    navToggleContainer.style.right = "-300px";
+    navButton.style.opacity ="1"
+    navBtnImg.style.animation ="unsqueeze 300ms";
+    navCloseButton.style.visibility ="hidden";
+    navCloseBtnImg.style.animation ="squeeze 300ms";
     // navToggleContainer.style.right = "0px";
   }
+  
+// *****************************************************************************************
 
-// .........................................................................................
 // =========================================================================================
 const niseLogo = document.createElement("img");
 niseLogo.setAttribute("id","niseLogo");
