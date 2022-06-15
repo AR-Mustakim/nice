@@ -22,12 +22,12 @@ function scrollFunction() {
 
     if (scrinWidth > 780 ) {
       // for laptop or pc view
-      stickyNavbar.style.height = "55px";
+      stickyNavbar.style.height = "70px";
       nise_Logo.style.height = "50px";
       nise_Logo.style.paddingLeft = "95%";      
     } 
     else{
-      stickyNavbar.style.height = "60px";
+      stickyNavbar.style.height = "65px";
       nise_Logo.style.height = "45px";
       nise_Logo.style.paddingLeft = "5%";          
     }

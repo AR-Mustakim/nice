@@ -149,6 +149,61 @@ navPagesList.setAttribute("class","collapse navbar-collapse");
 navPagesList.appendChild(navbarUL);
 
 // .........................................................................................
+
+
+
+const navButton = document.createElement("button");
+navButton.setAttribute("id","navBtn");
+navButton.setAttribute("onclick","navBtnOnClick()");
+navButton.style.width = "40px";
+navButton.style.height = "30px";
+navButton.style.padding = "0";
+
+
+// .....................................
+// navToggle Container content
+const navCloseButton = document.createElement("button");
+navCloseButton.setAttribute("id","navCloseBtn");
+navCloseButton.setAttribute("onclick","navCloseBtnOnClick()");
+navCloseButton.style.width = "40px";
+navCloseButton.style.height = "30px";
+navCloseButton.style.padding = "0";
+const navCloseBtnImg = document.createElement("img");
+navCloseBtnImg.setAttribute("src","image/navCloseBtn.png");
+navCloseButton.appendChild(navCloseBtnImg);
+
+
+
+
+const navToggleContainer = document.createElement("div");
+navToggleContainer.setAttribute("id","navToggleContainer");
+navToggleContainer.style.display = "none";
+navToggleContainer.style.right = "0px";
+navToggleContainer.style.width = "50vw";
+navToggleContainer.style.height = "100vh";
+navToggleContainer.style.zIndex = "10000";
+navToggleContainer.style.position = "fixed";
+navToggleContainer.appendChild(navCloseButton)
+
+
+
+
+const navBtnImg = document.createElement("img");
+navBtnImg.setAttribute("src","image/navBtn.png");
+navButton.appendChild(navBtnImg);
+
+
+function navBtnOnClick() {
+    
+    navToggleContainer.style.display = "block";
+  }
+
+function navCloseBtnOnClick() {
+    navToggleContainer.style.display = "none";
+    // navToggleContainer.style.right = "0px";
+  }
+
+// .........................................................................................
 // =========================================================================================
 const niseLogo = document.createElement("img");
 niseLogo.setAttribute("id","niseLogo");
@@ -167,21 +222,28 @@ navbarDiv.style.transition = "all 300ms ease";
 
 navbarDiv.appendChild(navbarBrand);
 navbarDiv.appendChild(navPagesList);
+navbarDiv.appendChild(navButton);
 
 const niseNavbarDiv = document.getElementById("niseNavbar");
 niseNavbarDiv.appendChild(navbarDiv);
+niseNavbarDiv.appendChild(navToggleContainer);
 // =========================================================================================
 // set the nise Navbar style while upon load the page
+// =========================================================================================
+
+
 var screenWidth = window.innerWidth;
 
 if (screenWidth>780){
     navbarDiv.style.height ="120px";
     niseLogo.style.height ="90px";
     niseLogo.style.paddingLeft = "95%";  
+    navButton.style.visibility ="Hidden";
 }
 else{
     navbarDiv.style.height ="90px";
     niseLogo.style.height ="50px";
     navbarBrand.style.height ="60px";
     niseLogo.style.paddingLeft = "5%";  
+    navButton.style.visibility ="Visible";
 }

@@ -609,53 +609,6 @@ let journal = [
 journal.sort( //sort journal by Year - back chronological order
   (old, recent) => (recent.Date.Year - old.Date.Year)
 );
-// ===========================================================< Books >=====================================================
-
-const book = [
-  {
-    "Authors": "Sangeeta Dey, Seok-Won Lee",
-    "Title": "Are We Training with The Right Data? Evaluating Collective Confidence in Training Data using Dempster Shafer Theory",
-    "Published": "The 44th International Conference on Software Engineering (ICSE 2022) New Ideas and Emerging Results (NIER)",
-    "Date":
-    {
-      "Day": "25",
-      "Month": "May",
-      "Year": "2022",
-    },
-    "Year": "2022",
-    "Source": "",
-  },
-  {
-    "Authors": "person 1 person 2",
-    "Title": "2020-01-05 13:42:19.324003",
-    "Published": "https://assets.chucknorris.host/img/avatar/chuck-norris.png",
-    "Date":
-    {
-      "Day": "25",
-      "Month": "May",
-      "Year": "2022",
-    },
-
-    "Source": null,
-  },
-  {
-    "Authors": "person 1 person 2",
-    "Title": "2020-01-05 13:42:19.324003",
-    "Published": "https://assets.chucknorris.host/img/avatar/chuck-norris.png",
-    "Date":
-    {
-      "Day": "25",
-      "Month": "May",
-      "Year": "2022",
-    },
-
-    "Source": "",
-  }
-]
-
-book.sort( //sort book by Year - back chronological order
-  (old, recent) => (recent.Date.Year - old.Date.Year)
-);
 
 // ===========================================================< Magazines >=====================================================
 
@@ -799,7 +752,6 @@ thesis.sort( //sort thesis by Year - back chronological order
   (old, recent) => (recent.Date.Year - old.Date.Year)
 );
 
-
 // ================================================================================================================
 //                                      The Javascript Command-Journal
 // ================================================================================================================
@@ -808,14 +760,14 @@ thesis.sort( //sort thesis by Year - back chronological order
 const months = ['January', 'February', 'March', 'April', 'May', 'June',
   'July', 'August', 'September', 'October', 'November', 'December'];
 
+const lb1 = document.createElement("br");
+const lb2 = document.createElement("br");
 
 const journalContainer = document.getElementById("journalContainer");
 for (i = 0; i <= journal.length; i++) {
 
-  if (journal[i].Authors != "" && journal[i].Title != "") {
-    
-    var lb1 = document.createElement("br");
-    var lb2 = document.createElement("br");
+  if (journal[i].Authors != "" && journal[i].Title != "") {    
+   
     const jAuthors = document.createTextNode(journal[i].Authors + ", ");
     var spanJTitle = document.createElement("span");
     const jTitle = document.createTextNode('"'+journal[i].Title + '", ');
@@ -859,4 +811,3 @@ for (i = 0; i <= journal.length; i++) {
   }
 
 }
-

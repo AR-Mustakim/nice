@@ -67,6 +67,47 @@ html {
   z-index: 99;
 }
 
+#navBtn {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+#navToggleContainer {
+  background: #888;
+  border: none;
+  outline: none;
+  
+}
+
+#navBtn img {
+  width: 40px;
+  height: 30px;
+  padding: 10%;
+}
+
+#navCloseBtn {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  position:fixed;
+  right: 17px;
+  top: 28px;
+}
+
+
+#navCloseBtn img {
+  width: 35px;
+  height: 35px;
+  padding: 10%;
+}
+
+/* #navBtn:hover {
+  opacity: 1;
+} */
+
 /* End of navbar-------------------------------------------------------------------------------------------------- */
 
 .row {
@@ -184,6 +225,13 @@ body h1,h2,h3,h4,h5{
   /* padding-left: 5%;
   padding-right: 5%; */
   width: 100%;
+  height: auto;
+}
+.medium-img {
+  /* padding-left: 5%;
+  padding-right: 5%; */
+  align-self: center;
+  width: 55%;
   height: auto;
 }
 
