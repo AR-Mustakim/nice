@@ -410,6 +410,31 @@ body h1,h2,h3,h4,h5{
   max-height: 150px;
 }
 
+.mySlides {display:none;}
+
+.slide-btn-left{
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  background-color: #ffffff;
+  font-size: xx-large;
+  border: 0px;
+}
+.slide-btn-right{
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  background-color: #ffffff;
+  font-size: xx-large;
+  border: 0px;
+}
+
+
+
+
+
+
+
 .publication-container{
   display: block;
   background-color: #ffffff;
@@ -564,6 +589,7 @@ footer a:hover {
   }
   .nise-content .alumni-year p{
     text-align: center;
+    padding: 0;
   }
   
 
