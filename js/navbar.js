@@ -158,7 +158,7 @@ navPagesList.appendChild(navbarUL);
 const navButton = document.createElement("button");
 navButton.setAttribute("id","navBtn");
 navButton.setAttribute("onclick","navBtnOnClick()");
-navButton.style.width = "40px";
+navButton.style.width = "35px";
 navButton.style.height = "30px";
 navButton.style.padding = "0";
 
@@ -169,12 +169,12 @@ navButton.style.padding = "0";
 const navCloseButton = document.createElement("button");
 navCloseButton.setAttribute("id","navCloseBtn");
 navCloseButton.setAttribute("onclick","navCloseBtnOnClick()");
-navCloseButton.style.width = "40px";
+navCloseButton.style.width = "30px";
 navCloseButton.style.height = "30px";
 navCloseButton.style.padding = "0";
 
 const navCloseBtnImg = document.createElement("img");
-navCloseBtnImg.setAttribute("src","image/navCloseBtn.png");
+navCloseBtnImg.setAttribute("src","image/navCloseBtn-green.png");
 navCloseButton.appendChild(navCloseBtnImg);
 
 const toggleNavUl = document.createElement("ul");
@@ -190,6 +190,10 @@ const toggleNavDiv = document.createElement("div");
 toggleNavDiv.setAttribute("class","toggleNavDiv");
 toggleNavDiv.appendChild(toggleNavUl);
 
+const navTC = document.createElement("div");
+navTC.setAttribute("id","navTC");
+navTC.appendChild(navCloseButton);
+navTC.appendChild(toggleNavDiv);
 
 const navToggleContainer = document.createElement("div");
 navToggleContainer.setAttribute("id","navToggleContainer");
@@ -199,8 +203,8 @@ navToggleContainer.style.width = "45vw";
 navToggleContainer.style.height = "100vh";
 navToggleContainer.style.zIndex = "10000";
 navToggleContainer.style.position = "fixed";
-navToggleContainer.appendChild(navCloseButton);
-navToggleContainer.appendChild(toggleNavDiv);
+navToggleContainer.appendChild(navTC);
+// navToggleContainer.appendChild(toggleNavDiv);
 
 
 const navBtnImg = document.createElement("img");
@@ -222,7 +226,6 @@ function navCloseBtnOnClick() {
     navBtnImg.style.animation ="unsqueeze 300ms";
     navCloseButton.style.visibility ="hidden";
     navCloseBtnImg.style.animation ="squeeze 300ms";
-    // navToggleContainer.style.right = "0px";
   }
   
 // *****************************************************************************************

@@ -64,10 +64,17 @@ html {
 }
 
 #navToggleContainer {
-  background: #4E8A10;
+  background: #f0f0f0;
   border: none;
   outline: none;
-  transition: all 500ms ease-in-out;
+  transition: all 300ms ease-out;
+}
+
+#navTC{
+  background-image: linear-gradient(100deg, white, #4d8a1027);
+  height: 100%;
+  width: 100%;
+  /* background-color: violet; */
   
 }
 
@@ -90,8 +97,8 @@ html {
 }
 
 #navCloseBtn img {
-  width: 35px;
-  height: 35px;
+  width: 30px;
+  height: 30px;
   padding: 10%;
   transition: all 300ms ease;
 }
@@ -106,7 +113,7 @@ html {
   padding: 0;
 }
 .toggleNavDiv ul li a{
-  color: #f1f1f1;
+  color: #4E8A10;
   text-shadow: 0px 2px 7px rgba(123, 123, 123, 0.35);
   font-size: larger ;
 }
@@ -115,12 +122,12 @@ html {
 
 
 @keyframes squeeze {
-  from {height: 35px;}
+  from {height: 30px;}
   to {height: 0px;}
 }
 @keyframes unsqueeze {
   from {height: 0px;}
-  to {height: 35px;}
+  to {height: 30px;}
 }
 
 
