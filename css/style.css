@@ -71,7 +71,7 @@ html {
 }
 
 #navTC{
-  background-image: linear-gradient(100deg, white, #4d8a1027);
+  background-image: linear-gradient(white, #4d8a1027);
   height: 100%;
   width: 100%;
   /* background-color: violet; */
@@ -112,10 +112,20 @@ html {
   list-style-type: none;
   padding: 0;
 }
-.toggleNavDiv ul li a{
+.toggleNavDiv .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #01bb55af;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1200;
+}
+
+
+.toggleNavDiv ul a{
   color: #4E8A10;
   text-shadow: 0px 2px 7px rgba(123, 123, 123, 0.35);
-  font-size: larger ;
+  font-size: x-large;
 }
 
 
