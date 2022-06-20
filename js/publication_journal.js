@@ -760,8 +760,8 @@ thesis.sort( //sort thesis by Year - back chronological order
 const months = ['January', 'February', 'March', 'April', 'May', 'June',
   'July', 'August', 'September', 'October', 'November', 'December'];
 
-const lb1 = document.createElement("br");
-const lb2 = document.createElement("br");
+var lb1 = document.createElement("br");
+var lb2 = document.createElement("br");
 
 const journalContainer = document.getElementById("journalContainer");
 for (i = 0; i <= journal.length; i++) {
@@ -805,6 +805,7 @@ for (i = 0; i <= journal.length; i++) {
     // for the styling purpose
     journalContainer.appendChild(paperContainer);
     if (i % 2 == 0) {
+      
       paperContainer.style.backgroundColor = "#F6FDED";
     }
 
