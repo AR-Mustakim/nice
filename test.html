@@ -1,46 +1,25 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
   <body>
-    <div id="niseNavbar"></div>
+    <h1>JavaScript Strings</h1>
+    <h2>The match() Method</h2>
 
-    <div class="nise-content container-fluid">
-      
-    </div>
+    <p>match() searches for a match in a string.</p>
 
-    
-    
+    <p>Do a search for "ain":</p>
 
-    <footer class="container-fluid text-center">
-      <div id="niseFooterlink"></div>
-      
-      <button onclick="backToTopFunction()" id="topBtn" title="Back to top">
-        <img src="image/top_icon.png" alt="" />
-      </button>
-      <p>
-        NiSE Research Group<br />
-        Department of Software Convergence Technology<br />
-        College of Information and Computer Engineering<br />
-        <a href="https://www.ajou.ac.kr/iadmissions/index.do"
-          >Ajou University</a
-        >
-      </p>
-    </footer>
+    <p id="demo"></p>
 
+    <script>
+      let text = "The rain in SPAIN stays mainly in the plain";
+      let result = text.match("ain");
+
+      if(result ="ain"){
+      document.getElementById("demo").innerHTML = result;
+      }
+      else{
+      document.getElementById("demo").innerHTML = "not found";
+      }
+    </script>
   </body>
-  <script src="js/navbar.js"></script>
-  <script src="js/script.js"></script>
-  <script src="js/footer.js"></script>
 </html>
-  

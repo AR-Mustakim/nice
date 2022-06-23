@@ -611,101 +611,6 @@ journal.sort( //sort journal by Year - back chronological order
 );
 
 
-// ===========================================================< Conferences >=====================================================
-
-const conference = [
-  {
-    "Authors": "Sangeeta Dey, Seok-Won Lee",
-    "Title": "Are We Training with The Right Data? Evaluating Collective Confidence in Training Data using Dempster Shafer Theory",
-    "Published": "The 44th International Conference on Software Engineering (ICSE 2022) New Ideas and Emerging Results (NIER)",
-    "Date":
-    {
-      "Day": "25",
-      "Month": "May",
-      "Year": "2022",
-    },
-    "Year": "2022",
-    "Source": "",
-  },
-  {
-    "Authors": "person 1 person 2",
-    "Title": "2020-01-05 13:42:19.324003",
-    "Published": "https://assets.chucknorris.host/img/avatar/chuck-norris.png",
-    "Date":
-    {
-      "Day": "25",
-      "Month": "May",
-      "Year": "2022",
-    },
-
-    "Source": null,
-  },
-  {
-    "Authors": "person 1 person 2",
-    "Title": "2020-01-05 13:42:19.324003",
-    "Published": "https://assets.chucknorris.host/img/avatar/chuck-norris.png",
-    "Date":
-    {
-      "Day": "25",
-      "Month": "May",
-      "Year": "2022",
-    },
-
-    "Source": "",
-  }
-]
-
-conference.sort( //sort conference by Year - back chronological order
-  (old, recent) => (recent.Date.Year - old.Date.Year)
-);
-// ===========================================================< Thesis/Technical Report >=====================================================
-
-const thesis = [
-  {
-    "Authors": "Sangeeta Dey, Seok-Won Lee",
-    "Title": "Are We Training with The Right Data? Evaluating Collective Confidence in Training Data using Dempster Shafer Theory",
-    "Published": "The 44th International Conference on Software Engineering (ICSE 2022) New Ideas and Emerging Results (NIER)",
-    "Date":
-    {
-      "Day": "25",
-      "Month": "May",
-      "Year": "2022",
-    },
-    "Year": "2022",
-    "Source": "",
-  },
-  {
-    "Authors": "person 1 person 2",
-    "Title": "2020-01-05 13:42:19.324003",
-    "Published": "https://assets.chucknorris.host/img/avatar/chuck-norris.png",
-    "Date":
-    {
-      "Day": "25",
-      "Month": "May",
-      "Year": "2022",
-    },
-
-    "Source": null,
-  },
-  {
-    "Authors": "person 1 person 2",
-    "Title": "2020-01-05 13:42:19.324003",
-    "Published": "https://assets.chucknorris.host/img/avatar/chuck-norris.png",
-    "Date":
-    {
-      "Day": "25",
-      "Month": "May",
-      "Year": "2022",
-    },
-
-    "Source": "",
-  }
-]
-
-thesis.sort( //sort thesis by Year - back chronological order
-  (old, recent) => (recent.Date.Year - old.Date.Year)
-);
-
 // ================================================================================================================
 //                                      The Javascript Command-Journal
 // ================================================================================================================
@@ -715,59 +620,88 @@ const months = ['January', 'February', 'March', 'April', 'May', 'June',
   'July', 'August', 'September', 'October', 'November', 'December'];
 
 
+// var keyword = '';
+console.log(keyword);
+
 const journalContainer = document.getElementById("journalContainer");
+const filterContainer = document.getElementById("filterContainer");
 
-for (i = 0; i <= journal.length; i++) {
+var form = document.createElement("form");
+form.setAttribute("method", "post");
+var input = document.createElement("input");
+input.setAttribute("id", "filterInput");
+// input.setAttribute("onkeyup", "filterContent()");
 
-  if (journal[i].Authors != "" && journal[i].Title != "") {
+form.append(input);
 
-    const jAuthors = document.createTextNode(journal[i].Authors + ", ");
-    var spanJTitle = document.createElement("span");
-    const jTitle = document.createTextNode('"' + journal[i].Title + '", ');
-    // spanJTitle.style = "font-weight: 500;";
-    spanJTitle.style.fontWeight = "500";
-
-    var lb1 = document.createElement("br");
-    spanJTitle.appendChild(lb1);
-    spanJTitle.appendChild(jTitle);
-
-    var lb2 = document.createElement("br");
-    spanJTitle.appendChild(lb2);
-    const jPublished = document.createTextNode(journal[i].Published + ", ");
-    const jDate = document.createTextNode(journal[i].Date.Month + " " + journal[i].Date.Day + " " + journal[i].Date.Year + ". ");
-
-    const jSource = document.createElement("a");
-
-    if (journal[i].Source != "") {
-      jSource.setAttribute("href", journal[i].Source);
-      var nodeSource = document.createTextNode(" [View] ");
-      jSource.appendChild(nodeSource);
-
-    } else {
-      var nodeSource = document.createTextNode(" ");
-      jSource.appendChild(nodeSource);
-    }
-
-    var paperContainer = document.createElement("p");
-    paperContainer.setAttribute("class", "papCont");
-    paperContainer.style.display = "block";
-    paperContainer.style.padding = "1%";
-    paperContainer.style.margin = "0%";
-    paperContainer.style.color = "#000000";
-    paperContainer.appendChild(jAuthors);
-    paperContainer.appendChild(spanJTitle);
-    paperContainer.appendChild(jPublished);
-    paperContainer.appendChild(jDate);
-    paperContainer.appendChild(jSource);
+filterContainer.appendChild(form);
 
 
-    // for the styling purpose
-    journalContainer.appendChild(paperContainer);
-    if (i % 2 == 0) {
-      paperContainer.style.backgroundColor = "#F6FDED";
-    }
+// function filterContent() {
+//   var keyword = document.getElementById('filterInput').value;
 
-  }
+//   for (i = 0; i <= journal.length; i++) {
 
-}
+//     if (keyword != "") {
 
+//       if (journal[i].Authors != "" && (journal[i].Title != "" &&
+//         (journal[i].Title).toLowerCase().match(keyword.toLowerCase()))) {
+//         populateJournalTab();
+//       }
+
+//     }
+//     else {
+//       if (journal[i].Authors != "" && journal[i].Title != "") {
+//         populateJournalTab();
+//       }
+//     }
+
+//   }
+// }
+
+
+
+// function populateJournalTab() {
+
+//   const jAuthors = document.createTextNode(journal[i].Authors + ", ");
+//   var spanJTitle = document.createElement("span");
+//   const jTitle = document.createTextNode('"' + journal[i].Title + '", ');
+//   spanJTitle.style.fontWeight = "500";
+
+//   var lb1 = document.createElement("br");
+//   spanJTitle.appendChild(lb1);
+//   spanJTitle.appendChild(jTitle);
+
+//   var lb2 = document.createElement("br");
+//   spanJTitle.appendChild(lb2);
+//   const jPublished = document.createTextNode(journal[i].Published + ", ");
+//   const jDate = document.createTextNode(journal[i].Date.Month + " " + journal[i].Date.Day + " " + journal[i].Date.Year + ". ");
+
+//   const jSource = document.createElement("a");
+
+//   if (journal[i].Source != "") {
+//     jSource.setAttribute("href", journal[i].Source);
+//     var nodeSource = document.createTextNode(" [View] ");
+//     jSource.appendChild(nodeSource);
+
+//   } else {
+//     var nodeSource = document.createTextNode(" ");
+//     jSource.appendChild(nodeSource);
+//   }
+
+//   var paperContainer = document.createElement("p");
+//   paperContainer.setAttribute("class", "papCont");
+//   paperContainer.style.display = "block";
+//   paperContainer.style.padding = "1%";
+//   paperContainer.style.margin = "0.5%";
+//   paperContainer.style.color = "#000000";
+//   paperContainer.appendChild(jAuthors);
+//   paperContainer.appendChild(spanJTitle);
+//   paperContainer.appendChild(jPublished);
+//   paperContainer.appendChild(jDate);
+//   paperContainer.appendChild(jSource);
+//   paperContainer.style.backgroundColor = "#F6FDED";
+
+//   journalContainer.appendChild(paperContainer);
+
+// }

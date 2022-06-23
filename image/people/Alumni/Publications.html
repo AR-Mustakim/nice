@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<!-- saved from url=(0061)file:///C:/Users/nise/Documents/Github/nice/publication3.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Publications</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./Publications_files/bootstrap.min.css">
+    <link rel="stylesheet" href="./Publications_files/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="./Publications_files/css2" rel="stylesheet">
+    <link href="./Publications_files/css2(1)" rel="stylesheet">
+  </head>
+  <body>
+    <div id="niseNavbar"><nav id="navbar" class="navbar fixed-top navbar-expand-lg navbar-light" style="transition: all 300ms ease 0s; height: 120px;"><a class="navbar-brand" style="transition: all 300ms ease 0s;"><img id="niseLogo" src="./Publications_files/logo.jpg" style="transition: all 300ms ease 0s; height: 90px; padding-left: 95%;"></a><div id="navPagesList" class="collapse navbar-collapse"><ul class="navbar-nav ml-auto"><li class="nav-item"><a class="nav-link" href="file:///C:/Users/nise/Documents/Github/nice/index.html">Home</a></li><li class="nav-item dropdown"><a class="nav-link">People</a><div id="ddContent" class="dropdown-content"><a href="file:///C:/Users/nise/Documents/Github/nice/members.html">Members</a><a href="file:///C:/Users/nise/Documents/Github/nice/alumni.html">Alumni</a></div></li><li class="nav-item dropdown"><a class="nav-link">Research</a><div id="ddContent" class="dropdown-content"><a href="file:///C:/Users/nise/Documents/Github/nice/project.html">Project</a><a href="file:///C:/Users/nise/Documents/Github/nice/publication.html">Publications</a></div></li><li class="nav-item dropdown"><a class="nav-link" href="file:///C:/Users/nise/Documents/Github/nice/activity.html">Activity</a></li><li class="nav-item"><a class="nav-link" href="file:///C:/Users/nise/Documents/Github/nice/news.html">News</a></li><li class="nav-item"><a class="nav-link" href="file:///C:/Users/nise/Documents/Github/nice/contact.html">Contact</a></li></ul></div><button id="navBtn" onclick="navBtnOnClick()" style="width: 35px; height: 30px; padding: 0px; visibility: hidden;"><img src="./Publications_files/navBtn.png"></button></nav><div id="navToggleContainer" style="display: none; right: -300px; width: 45vw; height: 100vh; z-index: 10000; position: fixed;"><div id="navTC"><button id="navCloseBtn" onclick="navCloseBtnOnClick()" style="width: 30px; height: 30px; padding: 0px;"><img src="./Publications_files/navCloseBtn-green.png"></button><div class="toggleNavDiv"><ul><a class="nav-link" href="file:///C:/Users/nise/Documents/Github/nice/index.html">Home</a><a class="nav-link" href="file:///C:/Users/nise/Documents/Github/nice/members.html">Member</a><a class="nav-link" href="file:///C:/Users/nise/Documents/Github/nice/alumni.html">Alumni</a><a class="nav-link" href="file:///C:/Users/nise/Documents/Github/nice/project.html">Project</a><a class="nav-link" href="file:///C:/Users/nise/Documents/Github/nice/publication.html">Publication</a><a class="nav-link" href="file:///C:/Users/nise/Documents/Github/nice/activity.html">Activity</a><a class="nav-link" href="file:///C:/Users/nise/Documents/Github/nice/news.html">News</a><a class="nav-link" href="file:///C:/Users/nise/Documents/Github/nice/contact.html">Contact</a></ul></div></div></div></div>
+
+
+    <div id="niseContent" class="nise-content container-fluid" style="background-image: url(&quot;image/bg3.jpg&quot;); background-size: cover; background-repeat: no-repeat; padding-top: 150px;">
+      <div id="niseContainer" class="row">
+        <div class="col-sm-2 sidenav"></div>
+        <div class="col-sm-8 text-left">
+          <h1>Publications 3</h1>
+          <hr style="border: 1px solid #538c11">
+
+          <p>
+            <b><i>Copyright Notice: </i></b> The papers on this page are
+            provided to ensure timely dissemination of scholarly and technical
+            work. Copyright and all rights therein are retained by authors or by
+            other copyright holders. All persons copying these papers are
+            expected to adhere to the terms and constraints invoked by each
+            author's copyright. In most cases, these works may not be reposted
+            without permission of the copyright holder.
+          </p>
+
+          <div class="container publication-container">
+            <div class="tab">
+              <button id="jourBtn" class="tablinks journ active" onclick="openTabs(event, &#39;Journals&#39;)">
+                Journals
+              </button>
+              <button class="tablinks" onclick="openTabs(event, &#39;Book_Proceeding&#39;)">
+                Book/Proceeding
+              </button>
+              <button class="tablinks" onclick="openTabs(event, &#39;Magazine&#39;)">
+                Magazine Article
+              </button>
+              <button class="tablinks" onclick="openTabs(event, &#39;Conferences&#39;)">
+                Conference/Symposium/Workshop/Poster
+              </button>
+              <button class="tablinks" onclick="openTabs(event, &#39;Thesis&#39;)">
+                Thesis/Technical Reports
+              </button>
+            </div>
+
+            <div id="Journals" class="tabcontent" style="display: block;">
+              <hr style="color: #538c11; margin-top: 0%; margin-bottom: 1%">
+              <h3>Journals/ Journal Editorials (*student co-author)</h3>
+              <div id="filterContainer"></div>
+              <div id="journalContainer"></div>
+            </div>
+
+            <div id="Book_Proceeding" class="tabcontent" style="display: none;">
+              <hr style="color: #538c11; margin-top: 0%; margin-bottom: 1%">
+              <h3>Book/ Proceedings</h3>
+              <div id="bookContainer"><p style="display: block; padding: 1%; margin: 0%; color: rgb(0, 0, 0); background-color: rgb(246, 253, 237);">Seok-Won Lee, Mattia Monga and Jan Jurjens(Editors), <span style="font-weight: 500;"><br>"Proceedings of the Seventh International Workshop on Software Engineering for Secure Systems", <br></span>IEEE Press, May  2011. <a> </a>(In conjunction with the ICSE 11), </p><p style="display: block; padding: 1%; margin: 0%; color: rgb(0, 0, 0);">Seok-Won Lee, Mattia Monga and Jan Jurjens (Editors), <span style="font-weight: 500;"><br>"Proceedings of the Sixth International Workshop on Software Engineering for Secure Systems", <br></span>IEEE Press, May  2010. <a> </a>(In conjunction with the ICSE 10) , </p><p style="display: block; padding: 1%; margin: 0%; color: rgb(0, 0, 0); background-color: rgb(246, 253, 237);">Seok-Won Lee, *Robin A. Gandhi and Sooyong Park, <span style="font-weight: 500;"><br>"Tracing Requirements, A book chapter for the Encyclopedia of Software Engineering, Taylor and Francis Group. Vol. II", <br></span>CRC Press, Nov  2010. <a> </a>, </p><p style="display: block; padding: 1%; margin: 0%; color: rgb(0, 0, 0);">*Robin Gandhi and Seok-Won Lee, <span style="font-weight: 500;"><br>"Ontology-guided Risk Analysis: From Informal Specifications to Formal Metrics", <br></span>A book chapter accepted to “Advances in Information and Intelligent Systems” by Springer Studies in Computational Intelligence (Editors: Zbyszek Ras &amp; Bill Ribarsky), SCI 251, pp. 227-249, Springer-Verlag Berlin Heidelberg, Nov  2009. <a href="http://www.machinediscovery.com/nise/Papers/IIS-bookchapter-02510227.pdf"> [View] </a>, </p><p style="display: block; padding: 1%; margin: 0%; color: rgb(0, 0, 0); background-color: rgb(246, 253, 237);">Bart De Win, Seok-Won Lee, and Mattia Monga, (Editors), <span style="font-weight: 500;"><br>"Proceedings of the Fifth International Workshop on Software Engineering for Secure Systems", <br></span>IEEE Press,   2009. <a> </a>(In conjunction with the ICSE 09), </p><p style="display: block; padding: 1%; margin: 0%; color: rgb(0, 0, 0);">Bart De Win, Seok-Won Lee, and Mattia Monga, (Editors), <span style="font-weight: 500;"><br>"Proceedings of the Fourth International Workshop on Software Engineering for Secure Systems", <br></span>IEEE Press, May  2008. <a> </a>(In conjunction with the ICSE 08), </p><p style="display: block; padding: 1%; margin: 0%; color: rgb(0, 0, 0); background-color: rgb(246, 253, 237);">William J. Tolone, Seok-Won Lee, Wei-Ning Xiang, *Joshua Blackwell, *Cody Yeager, *Andrew Schumpert, E. Wray Johnson, <span style="font-weight: 500;"><br>"Critical Infrastructure Analyses: A Methodology for Integrated Modeling and Simulation” A book chapter accepted to “Critical Infrastructure Protection II", <br></span>Springer, June  2008. <a href="http://www.machinediscovery.com/nise/Papers/ICCIP%2008%20-%20Tolone.pdf"> [View] </a>(Post-conference proceedings of the 2nd Annual IFIP Working Group 11.10 International Conference on Critical Infrastructure Protection - ICCIP 08) (In Press), </p><p style="display: block; padding: 1%; margin: 0%; color: rgb(0, 0, 0);">Zhao, W., Zhao, H., Lee, S.W., Yu, Y., Peng, X., Zhang, W. (Editors), <span style="font-weight: 500;"><br>"Proceedings of the workshop on Domain Specific Analysis and Design for Reuse (DSADR), (in conjunction with the 10th International Conference on Software Reuse (ICSR 2008),", <br></span>, May 25-29 2008. <a> </a>, </p><p style="display: block; padding: 1%; margin: 0%; color: rgb(0, 0, 0); background-color: rgb(246, 253, 237);">Bart De Win, Seok-Won Lee, and Mattia Monga, (Editors), <span style="font-weight: 500;"><br>"Proceedings of the Third International Workshop on Software Engineering for Secure Systems", <br></span>IEEE Press, May  2007. <a> </a>(In conjunction with the ICSE 07), </p><p style="display: block; padding: 1%; margin: 0%; color: rgb(0, 0, 0);">Seok Won Lee, <span style="font-weight: 500;"><br>"Proxy Viewpoints Model-based Requirements Discovery", <br></span> AAT 3097374, UMI/ProQuest Information &amp; Learning,   2003. <a> </a>, </p><p style="display: block; padding: 1%; margin: 0%; color: rgb(0, 0, 0); background-color: rgb(246, 253, 237);">Gheorghe Tecuci, Mihai Boicu, Kathryn Wright, Seok Won Lee, Dorin Marcu and Michael Bowman, <span style="font-weight: 500;"><br>"Intelligent Agents: Principles and Design - A Tutoring Based Approach to the Development of Intelligent Agents", <br></span>Kluwer Academic Press,   2000. <a href="http://www.machinediscovery.com/nise/Papers/Chapter-1.pdf"> [View] </a>A book chapter in Teodorescu, H.N., Mlynek, D., Kandel, A. and Zimmermann, H.J. (editors). Intelligent Systems and Interfaces, </p><p style="display: block; padding: 1%; margin: 0%; color: rgb(0, 0, 0);">Gheorghe Tecuci (Co-Authors as Contributing Writers: Tomasz Dybala, Michael Hieb, Harry Keeling, Kathryn Wright, Philippe Loustaunau, David Hille, Seok Won Lee) , <span style="font-weight: 500;"><br>"Building Intelligent Agents: An Apprenticeship Multistrategy Learning Theory, Methodology, Tool and Case Studies", <br></span>Academic Press, London, England,   1998. <a> </a>, </p><p style="display: block; padding: 1%; margin: 0%; color: rgb(0, 0, 0); background-color: rgb(246, 253, 237);">Gheorghe Tecuci and Seok Won Lee, <span style="font-weight: 500;"><br>"Selected Bibliography of Machine Learning, Knowledge Acquisition, and Intelligent Agents Research”, In Tecuci, G., Building Intelligent Agents: An Apprenticeship Multistrategy Learning Theory, Methodology, Tool and Case Studies", <br></span>Academic Press, London, England,   1998. <a> </a>, </p></div>
+            </div>
+
+            <div id="Magazine" class="tabcontent" style="display: none;">
+              <hr style="color: #538c11; margin-top: 0%; margin-bottom: 1%">
+              <h3>Magazine Article</h3>
+              <div id="magazineContainer"><p style="padding: 1%; margin: 0%; color: rgb(0, 0, 0); background-color: rgb(246, 253, 237);">Lee, S.W., *Gandhi, R., Ahn, G., <span style="font-weight: 500;">"Establishing Trustworthiness in Services of the Critical Infrastructure through Certification and Accreditation”  ACM SIGSOFT Software Engineering Notes”, Vol. 30", </span>ACM Press, New York, NY, July  2004. <a href="http://www.machinediscovery.com/nise/Papers/p3-bruschi.pdf"> [View] </a> (Also appeared in SESS workshop at ICSE ’05), </p><p style="padding: 1%; margin: 0%; color: rgb(0, 0, 0);"><span style="font-weight: 500;">"Musical Ventures, Volunteer Work, Travel, and Research Make Summer for Some More Than a Day at the Beach: Faculty/Staff News, Mason Gazette", </span>A Publication for Faculty and Staff of George Mason University, September  1999. <a> </a>, </p><p style="padding: 1%; margin: 0%; color: rgb(0, 0, 0); background-color: rgb(246, 253, 237);">Seok Won Lee, <span style="font-weight: 500;">"A Methodological Knowledge Discovery Framework for Constructive Induction-based Multistrategy Learning", </span>Korean-American Scientists and Engineers Association (KSEA) Letters, Volume 27, No.3, pp. 42-46, March  1999. <a> </a>, </p></div>
+            </div>
+
+            <div id="Conferences" class="tabcontent" style="display: none;">
+              <h3>Conference/Symposium/Workshop/Poster</h3>
+              <h5>2018 Domestic Conference</h5>
+              <p>
+                김민주,이석원,“사례 분석을 통한 지능형 지속 위협의 사회공학적
+                요소 관계 모델 제안”, 2018 한국정보과학회
+                한국컴퓨터종합학술대회, 2018, 496 - 498 <a href="file:///C:/Users/nise/Documents/Github/nice/publication3.html"></a>
+              </p>
+              <p>
+                Ahmed AA.Saeed,Seok-Won Lee,“Decision Making for Non-Functional
+                Requirements Trade-off in Self-Adaptive Systems”, 2018
+                한국정보과학회 한국컴퓨터종합학술대회, 2018, 499 - 501
+                <a href="file:///C:/Users/nise/Documents/Github/nice/publication3.html"></a>
+              </p>
+              <p>
+                Chantal Mukundwa,Seok-Won Lee,“A Requirements Elicitation Method
+                to Improve Crowd-sourced Design Competition Platforms”, 2018
+                한국정보과학회 한국컴퓨터종합학술대회, 2018, 571 - 573
+                <a href="file:///C:/Users/nise/Documents/Github/nice/publication3.html"></a>
+              </p>
+              <p><a href="file:///C:/Users/nise/Documents/Github/nice/publication3.html"></a></p>
+
+              <h5>2017 International Conference</h5>
+              <p>
+                KIM, Seung-Jun; LEE, Seok-Won. "Social engineering based
+                security requirements elicitation model for advanced persistent
+                threats.", In: Asia Pacific Requirements Engeneering Conference.
+                Springer, Singapore, 2017. p. 29-40. <a href="file:///C:/Users/nise/Documents/Github/nice/publication3.html"></a>
+              </p>
+              <p>
+                Singh, Irish, and Seok-Won Lee. “Comparative Requirements
+                Analysis for the Feasibility of Blockchain for Secure Cloud.”,
+                In: Asia Pacific Requirements Engeneering Conference. Springer,
+                Singapore, 2017. p. 57-72. <a href="file:///C:/Users/nise/Documents/Github/nice/publication3.html"></a>
+              </p>
+              <p><a href="file:///C:/Users/nise/Documents/Github/nice/publication3.html"></a></p>
+
+              <h5>2017 Domestic Conference</h5>
+              <p>
+                박평우, 이석원, “k-최근접 이웃 알고리즘을 활용한 심장병 진단 및
+                예측”, 2017 한국정보처리학회 추계학술발표대회, 2017, 742 - 745
+                <a href="file:///C:/Users/nise/Documents/Github/nice/publication3.html"></a>
+              </p>
+            </div>
+
+            <div id="Thesis" class="tabcontent" style="display: none;">
+              <hr style="color: #538c11; margin-top: 0%; margin-bottom: 1%">
+              <h3>Thesis/ Technical Report</h3>
+              <div id="thesisContainer"></div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-2 sidenav"></div>
+    </div>
+
+    <footer class="container-fluid text-center">
+      <div id="niseFooterlink"><ul class="nav justify-content-center"><li class="nav-item"><a class="nav-link" href="file:///C:/Users/nise/Documents/Github/nice/index.html">Home</a></li><li class="nav-item"><a class="nav-link" href="file:///C:/Users/nise/Documents/Github/nice/members.html">People</a></li><li class="nav-item"><a class="nav-link" href="file:///C:/Users/nise/Documents/Github/nice/publication.html">Research</a></li><li class="nav-item"><a class="nav-link" href="file:///C:/Users/nise/Documents/Github/nice/Activity.html">Activity</a></li><li class="nav-item"><a class="nav-link" href="file:///C:/Users/nise/Documents/Github/nice/news.html">News</a></li><li class="nav-item"><a class="nav-link" href="file:///C:/Users/nise/Documents/Github/nice/help.html">Help</a></li><li class="nav-item"><a class="nav-link" href="file:///C:/Users/nise/Documents/Github/nice/contact.html">Contact</a></li></ul></div>
+
+      <button onclick="backToTopFunction()" id="topBtn" title="Back to top">
+        <img src="./Publications_files/top_icon.png" alt="">
+      </button>
+      <p>
+        NiSE Research Group<br>
+        Department of Software Convergence Technology<br>
+        College of Information and Computer Engineering<br>
+        <a href="https://www.ajou.ac.kr/iadmissions/index.do">Ajou University</a>
+      </p>
+    </footer>
+
+    <script src="./Publications_files/navbar.js.download"></script>
+    <script src="./Publications_files/content.js.download"></script>
+    <script src="./Publications_files/publication_magazine.js.download"></script>
+    <script src="./Publications_files/publication_journal2.js.download"></script>
+    <script src="./Publications_files/publication_book.js.download"></script>
+    <script src="./Publications_files/script.js.download"></script>
+    <script src="./Publications_files/footer.js.download"></script>
+  
+
+</body></html>

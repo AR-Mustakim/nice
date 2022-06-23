@@ -275,7 +275,6 @@ for (var i = 0; i <= alumni.length; i++) {
     p_tt.appendChild(lb2);
     p_tt.appendChild(bold);
     p_tt.appendChild(node_t);
-    // peopleDesc.appendChild(span_peopleName);
     peopleDesc.appendChild(p_tt);
     
     var rowAlumni = document.createElement("div");
@@ -288,58 +287,6 @@ for (var i = 0; i <= alumni.length; i++) {
     
     alumniContainer.appendChild(rowAlumni);
     alumniContainer.appendChild(hr);
-
-    
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-    // const bName = document.createTextNode(alumni[i].Name + ", ");
-
-    // var spanBDegree = document.createElement("span");    
-    // con
-    // if (alumni[i].Degree != "") {
-    //   var bDegree = document.createTextNode('"'+alumni[i].Degree + '", ');
-    //   spanBDegree.style.fontWeight = "500";
-    //   spanBDegree.appendChild(lb1);
-    //   spanBDegree.appendChild(bDegree);
-    //   spanBDegree.appendChild(lb2);
-    // } else {
-    //   var bDegree = document.createTextNode(" ");
-    //   spanBDegree.appendChild(bDegree);
-    // }
-
-    // const bYear = document.createTextNode(alumni[i].Year + ", ");
-     
-    // const bDissertation = document.createTextNode(alumni[i].Dissertation + ", ");
-
-    // var alumniContainer = document.createElement("p");
-    // alumniContainer.style.display = "block";
-    // alumniContainer.style.padding = "1%";
-    // alumniContainer.style.margin = "0%";
-    // alumniContainer.style.color = "#000000";
-    // alumniContainer.appendChild(bName);
-    // alumniContainer.appendChild(spanBDegree);
-    // alumniContainer.appendChild(bYear);
-    // alumniContainer.appendChild(bDate);
-    // alumniContainer.appendChi
-    // alumniContainer.appendChild(bDissertation);
-
-    // // for the styling purpose
-    // alumnisContainer.appendChild(alumniContainer);
-    // if (i % 2 == 0) {
-    //   alumnisContainer.style.backgroundColor = "#F6FDED";
-    // }
 
   }
 }

@@ -611,101 +611,6 @@ journal.sort( //sort journal by Year - back chronological order
 );
 
 
-// ===========================================================< Conferences >=====================================================
-
-const conference = [
-  {
-    "Authors": "Sangeeta Dey, Seok-Won Lee",
-    "Title": "Are We Training with The Right Data? Evaluating Collective Confidence in Training Data using Dempster Shafer Theory",
-    "Published": "The 44th International Conference on Software Engineering (ICSE 2022) New Ideas and Emerging Results (NIER)",
-    "Date":
-    {
-      "Day": "25",
-      "Month": "May",
-      "Year": "2022",
-    },
-    "Year": "2022",
-    "Source": "",
-  },
-  {
-    "Authors": "person 1 person 2",
-    "Title": "2020-01-05 13:42:19.324003",
-    "Published": "https://assets.chucknorris.host/img/avatar/chuck-norris.png",
-    "Date":
-    {
-      "Day": "25",
-      "Month": "May",
-      "Year": "2022",
-    },
-
-    "Source": null,
-  },
-  {
-    "Authors": "person 1 person 2",
-    "Title": "2020-01-05 13:42:19.324003",
-    "Published": "https://assets.chucknorris.host/img/avatar/chuck-norris.png",
-    "Date":
-    {
-      "Day": "25",
-      "Month": "May",
-      "Year": "2022",
-    },
-
-    "Source": "",
-  }
-]
-
-conference.sort( //sort conference by Year - back chronological order
-  (old, recent) => (recent.Date.Year - old.Date.Year)
-);
-// ===========================================================< Thesis/Technical Report >=====================================================
-
-const thesis = [
-  {
-    "Authors": "Sangeeta Dey, Seok-Won Lee",
-    "Title": "Are We Training with The Right Data? Evaluating Collective Confidence in Training Data using Dempster Shafer Theory",
-    "Published": "The 44th International Conference on Software Engineering (ICSE 2022) New Ideas and Emerging Results (NIER)",
-    "Date":
-    {
-      "Day": "25",
-      "Month": "May",
-      "Year": "2022",
-    },
-    "Year": "2022",
-    "Source": "",
-  },
-  {
-    "Authors": "person 1 person 2",
-    "Title": "2020-01-05 13:42:19.324003",
-    "Published": "https://assets.chucknorris.host/img/avatar/chuck-norris.png",
-    "Date":
-    {
-      "Day": "25",
-      "Month": "May",
-      "Year": "2022",
-    },
-
-    "Source": null,
-  },
-  {
-    "Authors": "person 1 person 2",
-    "Title": "2020-01-05 13:42:19.324003",
-    "Published": "https://assets.chucknorris.host/img/avatar/chuck-norris.png",
-    "Date":
-    {
-      "Day": "25",
-      "Month": "May",
-      "Year": "2022",
-    },
-
-    "Source": "",
-  }
-]
-
-thesis.sort( //sort thesis by Year - back chronological order
-  (old, recent) => (recent.Date.Year - old.Date.Year)
-);
-
 // ================================================================================================================
 //                                      The Javascript Command-Journal
 // ================================================================================================================
@@ -714,17 +619,39 @@ thesis.sort( //sort thesis by Year - back chronological order
 const months = ['January', 'February', 'March', 'April', 'May', 'June',
   'July', 'August', 'September', 'October', 'November', 'December'];
 
+  // const journalContainer = document.getElementById("journalContainer");
+  function filterJournal() {
+    
+    // let author_keyword_filter = form.elements["authorsF"];
+    // const journalContainer = document.getElementById("journalContainer").innerHTML;
+    const form = document.querySelector("#filterJournal");
+    let title_keyword_filter = form.elements["titleF"].value;
+    
+    for (i = 0; i <= journal.length; i++) {
+      
+      if (title_keyword_filter !== "") {
+        if (journal[i].Authors != "" && (journal[i].Title != "" && (journal[i].Title).toLowerCase().match(title_keyword_filter.toLowerCase()))) {
+          // console.log("title_keyword_filter  is ==" + title_keyword_filter);
+          populateJournalTab();
+          
+        }
+        
+      } else {
+        if (journal[i].Authors != "" && journal[i].Title != "" ){
+          populateJournalTab();
 
-const journalContainer = document.getElementById("journalContainer");
-
-for (i = 0; i <= journal.length; i++) {
-
+        }
+      }
+    }
+  }
+  
+  
+  function populateJournalTab() {
+    
   if (journal[i].Authors != "" && journal[i].Title != "") {
-
     const jAuthors = document.createTextNode(journal[i].Authors + ", ");
     var spanJTitle = document.createElement("span");
     const jTitle = document.createTextNode('"' + journal[i].Title + '", ');
-    // spanJTitle.style = "font-weight: 500;";
     spanJTitle.style.fontWeight = "500";
 
     var lb1 = document.createElement("br");
@@ -752,22 +679,18 @@ for (i = 0; i <= journal.length; i++) {
     paperContainer.setAttribute("class", "papCont");
     paperContainer.style.display = "block";
     paperContainer.style.padding = "1%";
-    paperContainer.style.margin = "0%";
+    paperContainer.style.margin = "0.5%";
     paperContainer.style.color = "#000000";
     paperContainer.appendChild(jAuthors);
     paperContainer.appendChild(spanJTitle);
     paperContainer.appendChild(jPublished);
     paperContainer.appendChild(jDate);
     paperContainer.appendChild(jSource);
+    paperContainer.style.backgroundColor = "#F6FDED";
 
-
-    // for the styling purpose
     journalContainer.appendChild(paperContainer);
-    if (i % 2 == 0) {
-      paperContainer.style.backgroundColor = "#F6FDED";
-    }
 
   }
 
-}
 
+}
